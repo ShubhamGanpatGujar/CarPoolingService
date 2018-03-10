@@ -18,7 +18,7 @@ public class ApplicationCarPoolBooking {
     public static void main(String[] args){
   CarPoolBookingDAO carpoolbookingDAO = new CarPoolBookingDAOImpl();
       int count;
-       count = carpoolbookingDAO.addCarPoolBooking(new CarPoolBooking(101,"10/10/2015",1006,00001,"10/10/2015","10:00:00",10,1001,5));
+       count = carpoolbookingDAO.addCarPoolBooking(new CarPoolBooking(101,"10/10/2015",1000,00001,"10/10/2015","10:00:00",1,10000,5));
       if(count>0)System.out.println("Record Added Successfully");
        else System.out.println("Record Failed to get added");
       
@@ -26,7 +26,7 @@ public class ApplicationCarPoolBooking {
       
 //       count=carpoolbookingDAO.deleteCarPoolBooking(1001);
 //     if(count>0)System.out.println("Record Added Successfully");
-//       else System.out.println("Record Failed to get added");
+//       else System.out.println("Record Failed to get Deleted");
 //      
 //      CarPoolBooking carpoolbooking = new CarPoolBooking(101,"10/10/2015",1006,00001,"10/10/2015","10:00",10,1001,5);
 //       count=carpoolbookingDAO.updateCarPoolBooking(1, carpoolbooking);

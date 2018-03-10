@@ -22,16 +22,16 @@ public class ApplicationRouteClass {
    public static void main(String[] args){
     RouteDAO routeDAO = new RouteDAOImpl();
     int count;
-   // count = routeDAO.addRoute(new Route(1,"Borivali","Malad",30));
-     // if(count>0)System.out.println("Record Added Successfully");
-      //else System.out.println("Record Failed to get added");
+    count = routeDAO.addRoute(new Route(1,"Borivali","Malad",30));
+      if(count>0)System.out.println("Record Added Successfully");
+      else System.out.println("Record Failed to get added");
       // count=routeDAO.deleteRoute(1008);
       //  if(count>0)System.out.println("Record Deleted Successfully");
       //    else System.out.println("Record Failed to get deleted");
-        Route route = new Route(1001,"Borivali","Malad",20);
-         count=routeDAO.updateRoute(1001, route);
-       if(count>0)System.out.println("Record Updated Successfully");
-       else System.out.println("Record Failed to get updated");
+//        Route route = new Route(1001,"Borivali","Malad",20);
+//         count=routeDAO.updateRoute(1001, route);
+//       if(count>0)System.out.println("Record Updated Successfully");
+//       else System.out.println("Record Failed to get updated");
 //        List<Route> routelist = routeDAO.getAllRoute();
 //        for(Route rou: routelist){
 //            System.out.println(rou.getRouteID()+ "|" + rou.getStartLocation() + "|" + rou.getDestination() + "|" + rou.getDistance());

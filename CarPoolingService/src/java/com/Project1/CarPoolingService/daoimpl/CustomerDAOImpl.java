@@ -29,15 +29,16 @@ public  class CustomerDAOImpl implements CustomerDAO {
         try {
             //return addEmployee(employee);
             Connection con = DerbyConnection.getConnection();
-            PreparedStatement preparedStatement = con.prepareStatement("insert into Customer(customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth) values(?,?,?,?,?,?)");
+            PreparedStatement preparedStatement = con.prepareStatement("insert into Customer(customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword) values(?,?,?,?,?,?,?)");
        preparedStatement.setString(1,customer.getCustomName());
-        preparedStatement.setLong(2,customer.getCustomerContact());
+        preparedStatement.setString(2,customer.getCustomerContact());
         preparedStatement.setString(3,customer.getCustomerGender());
         preparedStatement.setString(4,customer.getCustomerEmail());
         preparedStatement.setString(5,customer.getCustomerAddress());
         java.util.Date customerDateOfBirth =new java.util.Date(customer.getCustomerDateOfBirth());
         preparedStatement.setDate(6, new Date(customerDateOfBirth.getYear(),customerDateOfBirth.getMonth(),customerDateOfBirth.getDate()));
-            count = preparedStatement.executeUpdate();
+        preparedStatement.setString(7,customer.getCustomerPassword()); 
+        count = preparedStatement.executeUpdate();
            
         } catch (SQLException ex) {
             Logger.getLogger(CustomerDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
@@ -73,14 +74,14 @@ public  class CustomerDAOImpl implements CustomerDAO {
                 while(resultSet.next()){
                    int customerID =resultSet.getInt(1) ;
                    String customerName=resultSet.getString(2);
-                   int customerContact=resultSet.getInt(3) ;
+                   String customerContact=resultSet.getString(3) ;
                    String customerGender=resultSet.getString(4);
                    String customerEmail=resultSet.getString(5);
                    String customerAddress=resultSet.getString(6);
                    String customerDateOfBirth = resultSet.getDate(7).toString();
-
+                   String customerPassword=resultSet.getString(8);
                        
-                    Customer customer = new Customer(customerID,customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth);
+                    Customer customer = new Customer(customerID,customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword);
                     customerList.add(customer);
                 }
             }
@@ -108,14 +109,14 @@ public  class CustomerDAOImpl implements CustomerDAO {
                 while(resultSet.next()){
                    int customerId = resultSet.getInt(1);
                    String customerName=resultSet.getString(2);
-                   int customerContact=resultSet.getInt(3) ;
+                   String customerContact=resultSet.getString(3) ;
                    String customerGender=resultSet.getString(4);
                    String customerEmail=resultSet.getString(5);
                    String customerAddress=resultSet.getString(6);
                    String customerDateOfBirth=resultSet.getDate(7).toString();
-
+                   String customerPassword=resultSet.getString(8);
                     
-                Customer customer = new Customer(customerId,customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth);
+                Customer customer = new Customer(customerId,customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword);
                 customerList.add(customer);
                 }
             }
@@ -133,15 +134,16 @@ public  class CustomerDAOImpl implements CustomerDAO {
        int count=0;
         try {
             Connection con  = DerbyConnection.getConnection();
-            PreparedStatement preparedstatement = con.prepareStatement("update Customer set customerName=?,customerContact=?,customerGender=?,customerEmail=?,customerAddress=?,customerDateOfBirth=? where customerID=?");
+            PreparedStatement preparedstatement = con.prepareStatement("update Customer set customerName=?,customerContact=?,customerGender=?,customerEmail=?,customerAddress=?,customerDateOfBirth=?,customerPassword=? where customerID=?");
             preparedstatement.setString(1,customer.getCustomName());
-             preparedstatement.setLong(2,customer.getCustomerContact());
+             preparedstatement.setString(2,customer.getCustomerContact());
              preparedstatement.setString(3,customer.getCustomerGender());
              preparedstatement.setString(4,customer.getCustomerEmail());
              preparedstatement.setString(5,customer.getCustomerAddress());
              java.util.Date customerDateOfBirth=new java.util.Date(customer.getCustomerDateOfBirth());
             preparedstatement.setDate(6,new Date(customerDateOfBirth.getYear(),customerDateOfBirth.getMonth(),customerDateOfBirth.getDate()));
-             preparedstatement.setInt(7,customer.getCustomerID());
+            preparedstatement.setString(7,customer.getCustomerPassword());
+            preparedstatement.setInt(8,customer.getCustomerID());
             count= preparedstatement.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(CustomerDAOImpl.class.getName()).log(Level.SEVERE, null, ex);

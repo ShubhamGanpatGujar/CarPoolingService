@@ -14,24 +14,29 @@ import java.util.Date;
 public class Customer {
             int customerID  ;
             String customerName;
-            long customerContact;
+            String customerContact;
             String customerGender;
             String customerEmail;
             String customerAddress;
             String customerDateOfBirth;  
+            String customerPassword;
 
-    public Customer(String customerName, long customerContact, String customerGender, String customerEmail, String customerAddress, String customerDateOfBirth) {
+    
+
+   
+    public Customer(String customerName, String customerContact, String customerGender, String customerEmail, String customerAddress, String customerDateOfBirth,String customerPassword) {
         this.customerName = customerName;
         this.customerContact = customerContact;
         this.customerGender = customerGender;
         this.customerEmail = customerEmail;
         this.customerAddress = customerAddress;
         this.customerDateOfBirth = customerDateOfBirth;
+        this.customerPassword = customerPassword;
     }
    
             
 
-    public Customer(int customerID, String customerName, long customerContact, String customerGender, String customerEmail, String customerAddress, String customerDateOfBirth) {
+    public Customer(int customerID, String customerName, String customerContact, String customerGender, String customerEmail, String customerAddress, String customerDateOfBirth,String customerPassword) {
         this.customerID = customerID;
         this.customerName = customerName;
         this.customerContact = customerContact;
@@ -39,6 +44,7 @@ public class Customer {
         this.customerEmail = customerEmail;
         this.customerAddress = customerAddress;
         this.customerDateOfBirth = customerDateOfBirth;
+        this.customerPassword = customerPassword;
     }
 
    
@@ -51,7 +57,7 @@ public class Customer {
         this.customerName = customerName;
     }
 
-    public void setCustomerContact(long customerContact) {
+    public void setCustomerContact(String customerContact) {
         this.customerContact = customerContact;
     }
     
@@ -71,6 +77,11 @@ public class Customer {
         this.customerDateOfBirth = customerDateOfBirth;
     }
     
+
+    public void setCustomerPassword(String customerPassword) {
+        this.customerPassword = customerPassword;
+    }
+
   
     
     
@@ -82,7 +93,7 @@ public class Customer {
         return customerName;
     }
 
-  public long getCustomerContact() {
+  public String getCustomerContact() {
         return customerContact;
     }
 
@@ -102,5 +113,7 @@ public class Customer {
         return customerDateOfBirth;
     }
 
-   
+   public String getCustomerPassword() {
+        return customerPassword;
+    }
 }

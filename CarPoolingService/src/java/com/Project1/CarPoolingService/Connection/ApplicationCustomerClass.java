@@ -25,22 +25,22 @@ public class ApplicationCustomerClass {
         
         CustomerDAO customerDAO = new CustomerDAOImpl();
        int count;
-       count = customerDAO.addCustomer(new Customer(1,"Amay",231456789,"male","Amay43@","borivali","07/11/2015"));
-       if(count>0)System.out.println("Record Added Successfully");
-      else System.out.println("Record Failed to get added");
+//       count = customerDAO.addCustomer(new Customer(1,"Smita",231454159,"female","Smita43@gmail.com","borivali","07/11/2015","S123456"));
+//       if(count>0)System.out.println("Record Added Successfully");
+//      else System.out.println("Record Failed to get added");
         // count=customerDAO.deleteCustomer(1);
         //if(count>0)System.out.println("Record Deleted Successfully");
         //  else System.out.println("Record Failed to get deleted");
-       // Customer customer = new Customer(12,"Amit",44578987,"male","Amit43@","borivali","07/11/2015");
-       //  count=customerDAO.updateCustomer(12, customer);
-       // if(count>0)System.out.println("Record Updated Successfully");
-      // else System.out.println("Record Failed to get updated");
-       // List<Customer> customerlist = customerDAO.getAllCustomers();
-       // for(Customer cust: customerlist){
-         //   System.out.println(cust.getCustomerID()+ "|" + cust.getCustomName()+ "|" + cust.getCustomerContact() + "|" + cust.getCustomerGender()+ "|" + cust.getCustomerEmail()+ "|" + cust.getCustomerAddress() + "|" + cust.getCustomerDateOfBirth());
-       // }
-       // Customer cust = customerDAO.getCustomerByID(6);
-      //     System.out.println(cust.getCustomerID()+ "|" + cust.getCustomName()+ "|" + cust.getCustomerContact() + "|" + cust.getCustomerGender()+ "|" + cust.getCustomerEmail()+ "|" + cust.getCustomerAddress() + "|" + cust.getCustomerDateOfBirth());
+        Customer customer = new Customer(1,"Smita","9875894512","female","Smita143@gmail.com","borivali","07/12/2015","S123456");
+         count=customerDAO.updateCustomer(1, customer);
+        if(count>0)System.out.println("Record Updated Successfully");
+       else System.out.println("Record Failed to get updated");
+        List<Customer> customerlist = customerDAO.getAllCustomers();
+        for(Customer cust: customerlist){
+            System.out.println(cust.getCustomerID()+ "|" + cust.getCustomName()+ "|" + cust.getCustomerContact() + "|" + cust.getCustomerGender()+ "|" + cust.getCustomerEmail()+ "|" + cust.getCustomerAddress() + "|" + cust.getCustomerDateOfBirth());
+        }
+        Customer cust = customerDAO.getCustomerByID(1);
+           System.out.println(cust.getCustomerID()+ "|" + cust.getCustomName()+ "|" + cust.getCustomerContact() + "|" + cust.getCustomerGender()+ "|" + cust.getCustomerEmail()+ "|" + cust.getCustomerAddress() + "|" + cust.getCustomerDateOfBirth());
     
     }
 }
