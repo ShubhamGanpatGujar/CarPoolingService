@@ -59,7 +59,7 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            h1{\n");
       out.write("                font-size: 35px;\n");
       out.write("                color:#6666ff;\n");
-      out.write("               font-family:verdana;\n");
+      out.write("               font-family:serif;\n");
       out.write("            }  \n");
       out.write("            body\n");
       out.write("            {\n");
@@ -98,7 +98,7 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </form>\n");
       out.write("</nav>\n");
       out.write("    </header>\n");
-      out.write("         <div>\n");
+      out.write("        \n");
       out.write("     <body>\n");
       out.write("    \n");
       out.write("    </body>\n");

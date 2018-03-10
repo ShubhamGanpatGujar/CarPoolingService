@@ -20,7 +20,7 @@
             h1{
                 font-size: 35px;
                 color:#6666ff;
-               font-family:verdana;
+               font-family:Serif;
             }  
             body
             {

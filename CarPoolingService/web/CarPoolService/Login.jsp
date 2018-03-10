@@ -1,6 +1,6 @@
 <%-- 
-    Document   : Home
-    Created on : 10 Mar, 2018, 2:06:14 PM
+    Document   : Login
+    Created on : 11 Mar, 2018, 12:31:09 AM
     Author     : SHUBHAM
 --%>
 
@@ -21,6 +21,7 @@
                 font-size: 35px;
                 color:#6666ff;
                font-family:Serif;
+               
             }  
             body
             {
@@ -29,7 +30,51 @@
                
                 
             }
+          
             
+           [class="1"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color:#007bff;
+}
+
+[class="a"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+   
+}
         </style>
     </head>
     
@@ -40,7 +85,7 @@
         <nav class="navbar navbar-expand-sm bg-light navbar-light">
             <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link active" href="Home.jsp">Home</a>
+      <a class="nav-link " href="Home.jsp">Home</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="ContactUs.jsp">Contact Us</a>
@@ -60,8 +105,24 @@
               </div>
     </header>
          
-     <body>
-         <h3> <a href="Login.jsp">Login</a></h3>
+    <body>
+         <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" class="1" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" class="1" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit" class="a">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+        <div class="container">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
     </body>
     
 </html>

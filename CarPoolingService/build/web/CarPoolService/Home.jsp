@@ -20,7 +20,7 @@
             h1{
                 font-size: 35px;
                 color:#6666ff;
-               font-family:verdana;
+               font-family:Serif;
             }  
             body
             {
@@ -57,10 +57,11 @@
         <button class="btn btn-success" type="submit">Search</button>
         </form>
 </nav>
+              </div>
     </header>
-         <div>
+         
      <body>
-         <h3> Hiii all</h3>
+         <h3> <a href="Login.jsp">Login</a></h3>
     </body>
     
 </html>

@@ -53,7 +53,7 @@ public final class Footer_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            footer {\n");
       out.write("    position: fixed;\n");
       out.write("    height: 50px;\n");
-      out.write("    background-color: red;\n");
+      out.write("    background-color:grey;\n");
       out.write("    bottom: 0px;\n");
       out.write("    left: 0px;\n");
       out.write("    right: 0px;\n");
