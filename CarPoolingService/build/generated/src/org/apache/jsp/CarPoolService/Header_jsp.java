@@ -1,4 +1,4 @@
-package org.apache.jsp;
+package org.apache.jsp.CarPoolService;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -49,10 +49,12 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <head>\n");
       out.write("        <meta charset=\"utf-8\">\n");
       out.write("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
-      out.write("  <link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\">\n");
+      out.write("  <script src=\"../js/bootstrap.min.js\" type=\"text/javascript\"></script>\n");
+      out.write(" <!--<script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\"></script>-->\n");
+      out.write("   <!--<link rel=\"stylesheet\" href=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css\">-->\n");
+      out.write("   <link href=\"../css/bootstrap.css\" rel=\"stylesheet\" type=\"text/css\"/>\n");
       out.write("  <script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js\"></script>\n");
       out.write("  <script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js\"></script>\n");
-      out.write("  <script src=\"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js\"></script>\n");
       out.write("        <title>JSP Page</title>\n");
       out.write("        <style>\n");
       out.write("            \n");
@@ -72,7 +74,9 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            \n");
       out.write("        </style>\n");
       out.write("    </head>\n");
-      out.write("    \n");
+      out.write("          \n");
+      out.write("     <body>\n");
+      out.write(" \n");
       out.write("    <header>\n");
       out.write("          <div class=\"container-fluid\">\n");
       out.write("        <h1> <img src=\"carpoollogo.png\" class=\"rounded\" alt=\"carpoollogo\" width=\"120\" height=\"100\">\n");
@@ -80,16 +84,17 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <nav class=\"navbar navbar-expand-sm bg-light navbar-lightzz\">\n");
       out.write("            <ul class=\"nav nav-pills\">\n");
       out.write("    <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link active\" href=\"Home.jsp\">Home</a>\n");
+      out.write("      <a class=\"nav-link active \" href=\"Home.jsp\">Home</a>\n");
+      out.write("    </li>\n");
+      out.write("    \n");
+      out.write("    <li class=\"nav-item \" >\n");
+      out.write("      <a class=\"nav-link active\" href=\"ContactUs.jsp\">Contact Us</a>\n");
       out.write("    </li>\n");
       out.write("    <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link\" href=\"ContactUs.jsp\">Contact Us</a>\n");
+      out.write("      <a class=\"nav-link\" href=\"AboutUs.jsp\">About Us</a>\n");
       out.write("    </li>\n");
       out.write("    <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link\" href=\"#\">About Us</a>\n");
-      out.write("    </li>\n");
-      out.write("    <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link\" href=\"#\">Information</a>\n");
+      out.write("      <a class=\"nav-link\" href=\"Information.jsp\">Information</a>\n");
       out.write("    </li>\n");
       out.write("    \n");
       out.write("        <form class=\"form-inline\" action=\"/action_page.php\">\n");
@@ -98,9 +103,7 @@ public final class Header_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </form>\n");
       out.write("</nav>\n");
       out.write("    </header>\n");
-      out.write("        \n");
-      out.write("     <body>\n");
-      out.write("    \n");
+      out.write("  \n");
       out.write("    </body>\n");
       out.write("   \n");
       out.write("</html>\n");

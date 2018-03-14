@@ -12,7 +12,7 @@
         <title>JSP Page</title>
         <style>
             footer {
-    position: fixed;
+    position:inherit;
     height: 50px;
     background-color:grey;
     bottom: 0px;
@@ -27,8 +27,8 @@
     <body>
         <h1>Hello World!</h1>
     </body>
-    <footer class=>
-       Copyright
+    <footer>
+        <h3>Copyright</h3>
     </footer>
     
 </html>

@@ -11,6 +11,11 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static java.util.List<String> _jspx_dependants;
 
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/Header.jsp");
+  }
+
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
   public java.util.List<String> getDependants() {
@@ -44,6 +49,18 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
+      out.write(" \n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        ");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -59,7 +76,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("            h1{\n");
       out.write("                font-size: 35px;\n");
       out.write("                color:#6666ff;\n");
-      out.write("               font-family:verdana;\n");
+      out.write("               font-family:Serif;\n");
       out.write("            }  \n");
       out.write("            body\n");
       out.write("            {\n");
@@ -69,6 +86,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                \n");
       out.write("            }\n");
       out.write("            \n");
+      out.write("            \n");
       out.write("        </style>\n");
       out.write("    </head>\n");
       out.write("    \n");
@@ -76,7 +94,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("          <div class=\"container-fluid\">\n");
       out.write("        <h1> <img src=\"carpoollogo.png\" class=\"rounded\" alt=\"carpoollogo\" width=\"120\" height=\"100\">\n");
       out.write("               Transport Your World Pvt.Ltd</h1>\n");
-      out.write("        <nav class=\"navbar navbar-expand-sm bg-light navbar-light\">\n");
+      out.write("        <nav class=\"navbar navbar-expand-sm bg-light navbar-lightzz\">\n");
       out.write("            <ul class=\"nav nav-pills\">\n");
       out.write("    <li class=\"nav-item\">\n");
       out.write("      <a class=\"nav-link active\" href=\"Home.jsp\">Home</a>\n");
@@ -85,23 +103,26 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("      <a class=\"nav-link\" href=\"ContactUs.jsp\">Contact Us</a>\n");
       out.write("    </li>\n");
       out.write("    <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link\" href=\"AboutUs.jsp\">About Us</a>\n");
+      out.write("      <a class=\"nav-link\" href=\"#\">About Us</a>\n");
       out.write("    </li>\n");
       out.write("    <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link\" href=\"Information.jsp\">Information</a>\n");
+      out.write("      <a class=\"nav-link\" href=\"#\">Information</a>\n");
       out.write("    </li>\n");
       out.write("    \n");
-      out.write("        <form class=\"form-inline\" action=\"/action_page.php\" >\n");
-      out.write("        <input class=\"form-control\" type=\"text\" placeholder=\"Search\"  >\n");
+      out.write("        <form class=\"form-inline\" action=\"/action_page.php\">\n");
+      out.write("        <input class=\"form-control\" type=\"text\" placeholder=\"Search\">\n");
       out.write("        <button class=\"btn btn-success\" type=\"submit\">Search</button>\n");
       out.write("        </form>\n");
       out.write("</nav>\n");
       out.write("    </header>\n");
-      out.write("         <div>\n");
+      out.write("        \n");
       out.write("     <body>\n");
-      out.write("         <h3> Hiii all</h3>\n");
-      out.write("    </body>\n");
       out.write("    \n");
+      out.write("    </body>\n");
+      out.write("   \n");
+      out.write("</html>\n");
+      out.write("\n");
+      out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

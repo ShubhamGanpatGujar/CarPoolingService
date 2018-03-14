@@ -4,17 +4,12 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class header3_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
-
-  static {
-    _jspx_dependants = new java.util.ArrayList<String>(1);
-    _jspx_dependants.add("/CarPoolService/header3.jsp");
-  }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -49,33 +44,6 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("\n");
       out.write("\n");
-      out.write(" \n");
-      out.write("<!DOCTYPE html>\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("         <meta charset=\"utf-8\">\n");
-      out.write("  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n");
-      out.write("\n");
-      out.write("        <title>JSP Page</title>\n");
-      out.write("    </head>\n");
-      out.write("    <style>\n");
-      out.write("        .carousel \n");
-      out.write("           {\n");
-      out.write("               position: relative; \n");
-      out.write("               top:0; \n");
-      out.write("           }\n");
-      out.write("           .carousel-inner \n");
-      out.write("           {\n");
-      out.write("               position: relative; \n");
-      out.write("               width: 100%;\n");
-      out.write("               overflow: hidden;\n");
-      out.write("           }\n");
-      out.write("    </style>\n");
-      out.write("    <body>\n");
-      out.write("        ");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
       out.write("<!DOCTYPE html>\n");
       out.write("<html>\n");
       out.write("    <head>\n");
@@ -96,8 +64,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("           {\n");
       out.write("               position: relative; \n");
       out.write("               width: 100%;\n");
-      out.write("               overflow: hidden;\n");
-      out.write("           }\n");
+      out.write("               overflow: hidden;}\n");
       out.write("           \n");
       out.write("         .navbar \n");
       out.write("          {\n");
@@ -112,9 +79,6 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("         body\n");
       out.write("         {\n");
       out.write("             font-size-adjust:20;\n");
-      out.write("         }\n");
-      out.write("         h1{\n");
-      out.write("             font-size: 50px;\n");
       out.write("         }\n");
       out.write("       </style>\n");
       out.write("    </head> \n");
@@ -133,13 +97,13 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <a class=\"nav-link\" href=\"Home.jsp\">Home</a>\n");
       out.write("    </li>\n");
       out.write("    <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link\" href=\"ContactUs.jsp\">ContactUs</a>\n");
+      out.write("      <a class=\"nav-link\" href=\"ContactUs\">ContactUs</a>\n");
       out.write("    </li>\n");
       out.write("    <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link\" href=\"AboutUs.jsp\">AboutUs</a>\n");
+      out.write("      <a class=\"nav-link\" href=\"AboutUs\">AboutUs</a>\n");
       out.write("    </li>\n");
       out.write("     <li class=\"nav-item\">\n");
-      out.write("      <a class=\"nav-link\" href=\"Information.jsp\">Information</a>\n");
+      out.write("      <a class=\"nav-link\" href=\"Information\">Information</a>\n");
       out.write("    </li>\n");
       out.write("  </ul>\n");
       out.write("</nav>\n");
@@ -148,18 +112,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        \n");
       out.write("        \n");
       out.write("        \n");
-      out.write("\n");
-      out.write("\n");
-      out.write("  \n");
-      out.write("  \n");
-      out.write("  \n");
-      out.write("\n");
-      out.write("    </body>\n");
-      out.write("   \n");
-      out.write("</html>");
-      out.write("\n");
       out.write("        \n");
-      out.write("                \n");
       out.write("<div id=\"demo\" class=\"carousel slide\" data-ride=\"carousel\">\n");
       out.write("  <ul class=\"carousel-indicators\">\n");
       out.write("    <li data-target=\"#demo\" data-slide-to=\"0\" class=\"active\"></li>\n");
@@ -172,7 +125,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        <img src=\"image4.jpeg\" alt=\"image\"  height=\"800px\" width=\"100%\">\n");
       out.write("      <div class=\"container\">\n");
       out.write("      <div class=\"carousel-caption\">\n");
-      out.write("    <h1>Transport Your World</h1>\n");
+      out.write("    <h1>CarPool</h1>\n");
       out.write("    <p>Lets ride today</p>\n");
       out.write("    <p>\n");
       out.write("        <a class=\"btn btn-large btn-primary\" href=\"#\">Sign Up</a></p>\n");
@@ -183,7 +136,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("      <img src=\"image2.jpeg\" alt=\"Chicago\" height=\"800px\" width=\"100%\"  >\n");
       out.write("       <div class=\"container\">\n");
       out.write("      <div class=\"carousel-caption\">\n");
-      out.write("    <h1>Transport Your World</h1>\n");
+      out.write("    <h1>Transport Your World Pvt.Ltd</h1>\n");
       out.write("    <p>Lets ride today</p>\n");
       out.write("    <p>\n");
       out.write("        <a class=\"btn btn-large btn-primary\" href=\"#\">Sign in</a></p>\n");
@@ -199,8 +152,15 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <span class=\"carousel-control-next-icon\"></span>\n");
       out.write("  </a>\n");
       out.write("</div> \n");
+      out.write("\n");
+      out.write("  \n");
+      out.write("  \n");
+      out.write("  \n");
+      out.write("</div>\n");
+      out.write("\n");
       out.write("    </body>\n");
-      out.write("</html>\n");
+      out.write("   \n");
+      out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

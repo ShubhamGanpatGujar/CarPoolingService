@@ -10,10 +10,12 @@
     <head>
         <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="../js/bootstrap.min.js" type="text/javascript"></script>
+ <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+   <link href="../css/bootstrap.css" rel="stylesheet" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <title>JSP Page</title>
         <style>
             
@@ -33,24 +35,27 @@
             
         </style>
     </head>
-    
+          
+     <body>
+ 
     <header>
           <div class="container-fluid">
         <h1> <img src="carpoollogo.png" class="rounded" alt="carpoollogo" width="120" height="100">
                Transport Your World Pvt.Ltd</h1>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <nav class="navbar navbar-expand-sm bg-light navbar-lightzz">
             <ul class="nav nav-pills">
     <li class="nav-item">
-      <a class="nav-link active" href="Home.jsp">Home</a>
+      <a class="nav-link active " href="Home.jsp">Home</a>
+    </li>
+    
+    <li class="nav-item " >
+      <a class="nav-link active" href="ContactUs.jsp">Contact Us</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="ContactUs.jsp">Contact Us</a>
+      <a class="nav-link" href="AboutUs.jsp">About Us</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">About Us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Information</a>
+      <a class="nav-link" href="Information.jsp">Information</a>
     </li>
     
         <form class="form-inline" action="/action_page.php">
@@ -59,9 +64,7 @@
         </form>
 </nav>
     </header>
-        
-     <body>
-    
+  
     </body>
    
 </html>
