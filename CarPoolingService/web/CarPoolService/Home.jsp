@@ -57,7 +57,7 @@
     <h1>Transport Your World</h1>
     <p>Lets ride today</p>
     <p>
-        <a class="btn btn-large btn-primary" href="Singin.jsp">Sign in</a></p>
+        <a class="btn btn-large btn-primary" href="Login.jsp">Sign in</a></p>
       </div>
     </div>
     </div>
