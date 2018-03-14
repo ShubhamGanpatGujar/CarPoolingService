@@ -9,11 +9,13 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <title>JSP Page</title>
        
         <style>
-            
-                    .form-signin
+            .form-signin
 {
     max-width: 330px;
     padding: 15px;
@@ -41,7 +43,7 @@
 {
     z-index: 2;
 }
-            .form-signin input[type="text"]
+.form-signin input[type="text"]
 {
     margin-bottom: -1px;
     border-bottom-left-radius: 0;
@@ -53,15 +55,7 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-.account-wall
-{
-    margin-top: 20px;
-    padding: 40px 0px 20px 0px;
-    background-color: #f7f7f7;
-    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-}
+
 .login-title
 {
     color: #555;
@@ -88,17 +82,38 @@
     display: block;
     margin-top: 10px;
 }
- 
+.account-walls {
+     margin-top: 20px;
+     padding: 20px 0px 10px 0px;
+     background-color: #f7f7f7;
+     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+.account-wall {
+     margin-top: 20px;
+     padding: 40px 0px 20px 0px;
+     background-color: #f7f7f7;
+     -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
         </style>
         
     </head>
     <body>
+        
          
-          <%@include file="header3.jsp" %> 
           <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
-         <h1 class="text-center login-title">Sign in</h1>
+          
+         <h1 class="text-center login-title"> 
+             <a href="Home.jsp">
+    <img src="carpoollogo.png" alt="logo" style="width:40px;">
+             </a>
+             <br> <br>Sign in to Transport Your World</h1>
+         
          <div class="account-wall">
           <img class="profile-img" src="Prologo.png">
           
@@ -112,10 +127,11 @@
            <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
           </form>
             </div>
-            <a href="#" class="text-center new-account">For New User click Me</a>
+             <div class="account-walls ">
+            <a href="SingUp.jsp" class="text-center new-account">For New User click Me</a>
         </div>
         </div>
-   
+    </div>
         </div>
     </body>
 </html>
