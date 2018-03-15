@@ -14,5 +14,6 @@
     <body>
        <%@include file="header3.jsp" %>
        <h1>hiiii it is About us</h1>
+       <%@include file="Footer.jsp" %>
     </body>
 </html>

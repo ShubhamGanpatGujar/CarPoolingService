@@ -128,11 +128,26 @@
           </form>
             </div>
              <div class="account-walls ">
-            <a href="SingUp.jsp" class="text-center new-account">For New User click Me</a>
+            <a href="SingUp.jsp" class="text-center new-account"> If New User ? Sing Up </a>
         </div>
         </div>
     </div>
         </div>
+        
+        <br><br> 
+        
+         <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                       
+                        <p>
+                            &COPY; 2010 Transport your World Pvt Ltd, Inc.
+                            &middot; <a href="Privacy">Privacy</a>
+                            &middot; <a href="Terms and condition">Terms & condition</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
     </body>
 </html>
 

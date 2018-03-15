@@ -36,7 +36,7 @@
             <br><br>
 <fieldset>
 
-<legend>Create your personal account</legend>
+<legend>Create your personal account on Transport your world</legend>
 
  <div class="account-wall">
 <div class="form-group">
@@ -109,14 +109,23 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="submit"></label>
   <div class="col-md-4">
-    <button id="submit" name="submit" class="btn btn-success">Submit</button>
+    <button id="submit" name="submit" class="btn btn-success">Sing Up</button>
   </div>
 </div>
+                 <div class="container">
+        <h6> By clicking "Sign up for Transport your world", you agree to our
+         <a href="Terms and condition">Terms & condition</a> and 
+          <a href="Privacy">Privacy</a>
+         policy.</h6>
+                 </div>
  </div>
+
 </fieldset>
+            
 </form>
 	</div>
 </div>
-   
+    
+    
 </body>
 </html>

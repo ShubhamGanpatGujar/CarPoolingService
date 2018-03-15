@@ -104,7 +104,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        \n");
       out.write("     <nav class=\"navbar navbar-expand-sm bg-dark navbar-dark\">\n");
       out.write(" \n");
-      out.write("  <a class=\"navbar-brand\" href=\"#\">\n");
+      out.write("  <a class=\"navbar-brand\" href=\"Home.jsp\">\n");
       out.write("    <img src=\"carpoollogo.png\" alt=\"logo\" style=\"width:40px;\">\n");
       out.write("  </a>\n");
       out.write("  \n");
@@ -167,7 +167,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <h1>Transport Your World</h1>\n");
       out.write("    <p>Lets ride today</p>\n");
       out.write("    <p>\n");
-      out.write("        <a class=\"btn btn-large btn-primary\" href=\"#\">Sign up</a></p>\n");
+      out.write("        <a class=\"btn btn-large btn-primary\" href=\"SingUp.jsp\">Sign up</a></p>\n");
       out.write("      </div>\n");
       out.write("    </div>\n");
       out.write("    </div>\n");
@@ -180,6 +180,28 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <span class=\"carousel-control-next-icon\"></span>\n");
       out.write("  </a>\n");
       out.write("</div> \n");
+      out.write("        \n");
+      out.write("        <br><br>\n");
+      out.write("        <div class=\"container\">\n");
+      out.write("  <div class=\"row\">\n");
+      out.write("         <div class=\"container-marketing\">\n");
+      out.write("            <div class=\"row\">\n");
+      out.write("                <div class=\"col-lg-6\">\n");
+      out.write("                   <img src=\"image4.jpeg\" class=\"rounded-circle\" alt=\"Cinque Terre\" width=\"304\" height=\"236\"> \n");
+      out.write("                    <p><a class=\"btn btn-default\" href=\"#\">Book your car</a></p>\n");
+      out.write("                </div>\n");
+      out.write("            </div>\n");
+      out.write("         </div>\n");
+      out.write("  \n");
+      out.write("                <div class=\"col-lg-6\">\n");
+      out.write("                    <img src=\"image2.jpeg\" class=\"rounded-circle\" alt=\"Cinque Terre\" width=\"304\" height=\"236\"> \n");
+      out.write("                    <p><a class=\"btn btn-default\" href=\"#\">Book your carpoolservice</a></p>\n");
+      out.write("                </div>\n");
+      out.write("           \n");
+      out.write("       \n");
+      out.write("  </div>\n");
+      out.write("        </div>\n");
+      out.write("        \n");
       out.write("    </body>\n");
       out.write("</html>\n");
     } catch (Throwable t) {

@@ -68,5 +68,6 @@ you can look for people who need that same schedule or who can add you to their 
     </div>
   </div>
       </div>
+      <%@include file="Footer.jsp" %>
        </body>
 </html>

@@ -11,7 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
         <style>
-            footer {
+/*            footer {
     position:inherit;
     height: 50px;
     background-color:grey;
@@ -19,16 +19,32 @@
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
-}
+}*/
+ footer
+            {
+               background-color: #000;
+               padding: 5px;
+            }
         </style>
         
     </head>
     
     <body>
-        <h1>Hello World!</h1>
+       
     </body>
     <footer>
-        <h3>Copyright</h3>
-    </footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="pull-rigth"><a href="#">Back to top</a></p>
+                        <p>
+                            &COPY; 2010 Transport your World Pvt Ltd, Inc.
+                            &middot; <a href="Privacy">Privacy</a>
+                            &middot; <a href="Terms and condition">Terms & condition</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     
 </html>
