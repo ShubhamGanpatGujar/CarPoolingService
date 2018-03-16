@@ -11,8 +11,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
   <title>JSP Page</title>
 <style>
 .account-wall {
@@ -28,7 +28,7 @@
 <body>
     <div class="container">
 	<div class="row">
-	<form class="form-horizontal">
+            <form class="form-horizontal" action="SingUp.do" method="post">
             <br>
              <a href="Home.jsp">
     <img src="carpoollogo.png" alt="logo" style="width:40px;">
@@ -42,33 +42,33 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="Name">Name</label>  
   <div class="col-md-5">
-      <input id="Name" name="Name" type="text" placeholder="username" class="form-control input-md" required="username">
+      <input id="Name" name="customerName" type="text" placeholder="username" class="form-control input-md" required="username">
     
   </div>
 </div>
 
-<!-- Password input-->
+
 <div class="form-group">
   <label class="col-md-4 control-label" for="passwordinput">Password</label>
   <div class="col-md-5">
-    <input id="passwordinput" name="passwordinput" type="password" placeholder="" class="form-control input-md" required="up">
+    <input id="passwordinput" name="customerPassword" type="Password" placeholder="" class="form-control input-md" required="up">
     <span class="help-block">max 16 characters</span>
   </div>
 </div>
 
-<!-- Password input-->
-<div class="form-group">
+
+<!--<div class="form-group">
   <label class="col-md-4 control-label" for="confirm_password">Confirm Password</label>
   <div class="col-md-5">
     <input id="confirm_password" name="confirm_password" type="password" placeholder="Re-type password" class="form-control input-md" required="up2">
     
   </div>
-</div>
+</div>-->
 
 <div class="form-group">
   <label class="col-md-4 control-label" for="contactnumber">Contact Number</label>  
   <div class="col-md-5">
-  <input id="mobilenumber" name="contactnumber" type="text" placeholder="Contact Number" class="form-control input-md" required="">
+  <input id="mobilenumber" name="customerContact" type="text" placeholder="Contact Number" class="form-control input-md" required="">
     
   </div>
 </div>
@@ -78,10 +78,10 @@
   <label class="col-md-4 control-label" for="gender">Gender</label>
   <div class="col-md-4"> 
     <label class="radio-inline" for="gender-0">
-      <input type="radio" name="gender" id="gender-0" value="Male" checked="checked">Male</label>
+      <input type="radio" name="customerGender" id="gender-0" value="Male" checked="checked">Male</label>
       
     <label class="radio-inline" for="gender-1">
-      <input type="radio" name="gender" id="gender-1" value="Female">Female</label>
+      <input type="radio" name="customerGender" id="gender-1" value="Female">Female</label>
   </div>
 </div>
 
@@ -89,18 +89,25 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="address">Address</label>
   <div class="col-md-4">                     
-    <textarea class="form-control" id="address" name="address">default text</textarea>
+    <textarea class="form-control" id="address" name="customerAddress">default text</textarea>
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="date">Date</label>  
+  <div class="col-md-2">
+  <input id="date" name="customerDateOfBirth" type="text" placeholder="DD/MM/YYYY" class="form-control input-md" required="">
+    
   </div>
 </div>
 
 
 
 
-<!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="emailId">Email Id</label>  
   <div class="col-md-6">
-  <input id="emailId" name="emailId" type="text" placeholder="user@domain.com" class="form-control input-md" required="">
+  <input id="emailId" name="customerEmail" type="text" placeholder="user@domain.com" class="form-control input-md" required="">
     
   </div>
 </div>

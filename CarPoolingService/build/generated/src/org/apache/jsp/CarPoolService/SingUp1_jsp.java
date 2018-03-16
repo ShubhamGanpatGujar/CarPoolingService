@@ -4,12 +4,17 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class header3_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class SingUp1_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
   private static java.util.List<String> _jspx_dependants;
+
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(1);
+    _jspx_dependants.add("/CarPoolService/header3.jsp");
+  }
 
   private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
@@ -41,6 +46,17 @@ public final class header3_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        ");
       out.write("\n");
       out.write("\n");
       out.write("\n");
@@ -95,13 +111,7 @@ public final class header3_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("\n");
       out.write("                \n");
       out.write("        \n");
-      out.write("        <div id=\"navDemo\" class=\"w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top\" style=\"margin-top:46px\">\n");
-      out.write("  <a href=\"Home.jsp\" class=\"w3-bar-item w3-button w3-padding-large\">HOME</a>\n");
-      out.write("  <a href=\"ContactUs.jsp\" class=\"w3-bar-item w3-button w3-padding-large\">CONTACT</a>\n");
-      out.write("  <a href=\"AboutUs.jsp\" class=\"w3-bar-item w3-button w3-padding-large\">ABOUT US</a>\n");
-      out.write("  <a href=\"Information.jsp\" class=\"w3-bar-item w3-button w3-padding-large\">INFORMATION</a>\n");
-      out.write("</div>\n");
-      out.write("\n");
+      out.write("        \n");
       out.write("        \n");
       out.write("\n");
       out.write("\n");
@@ -112,6 +122,26 @@ public final class header3_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    </body>\n");
       out.write("   \n");
       out.write("</html>");
+      out.write("\n");
+      out.write("        <form action=\"signup.do\" method=\"post\">\n");
+      out.write("            Customer Name :<input type=\"text\" name=\"customerName\" /><br>\n");
+      out.write("            <br/>\n");
+      out.write("            Contact :<input type=\"text\" name=\"customerContact\" /><br>\n");
+      out.write("            <br/>\n");
+      out.write("            Gender :<input type=\"text\" name=\"customerGender\" /><br>\n");
+      out.write("            <br/>\n");
+      out.write("            Email :<input type=\"text\" name=\"customerEmail\" /><br>\n");
+      out.write("            <br/>\n");
+      out.write("           Address :<input type=\"text\" name=\"customerAddress\" /><br>\n");
+      out.write("            <br/>\n");
+      out.write("           DateOfBirth :<input type=\"text\" name=\"customerDateOfBirth\" /><br>\n");
+      out.write("            <br/>\n");
+      out.write("            Password :<input type=\"text\" name=\"customerPassword\" /><br>\n");
+      out.write("            <br/>\n");
+      out.write("            <input type=\"submit\" value=\"Submit\"/>\n");
+      out.write("        </form>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

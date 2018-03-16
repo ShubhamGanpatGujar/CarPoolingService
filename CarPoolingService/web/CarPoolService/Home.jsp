@@ -40,7 +40,7 @@
    
   <div class="carousel-inner">
     <div class="carousel-item active">  
-        <img src="image4.jpeg" alt="image"  height="800px" width="100%">
+        <img src="image4.jpeg" alt="image"  height="100%" width="100%" >
       <div class="container">
       <div class="carousel-caption">
     <h1>Transport Your World</h1>
@@ -51,7 +51,7 @@
     </div>
     </div>
     <div class="carousel-item">
-      <img src="image2.jpeg" alt="Chicago" height="800px" width="100%"  >
+      <img src="image2.jpeg" alt="Chicago" height="100%" width="100%"  >
        <div class="container">
       <div class="carousel-caption">
     <h1>Transport Your World</h1>
