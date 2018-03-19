@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
     <servlet>
-     
-    
-    <servlet>
-        <servlet-name>signupservlet</servlet-name>
-        <servlet-class>com.Project1.CarPoolingService.Servlet.signupservlet</servlet-class>
+        <servlet-name>SignUpServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.SignUpServlet</servlet-class>
     </servlet>
-  
+    <servlet>
+        <servlet-name>SignInServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.SignInServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
-        <servlet-name>signupservlet</servlet-name>
-        <url-pattern>/signup.do</url-pattern>
+        <servlet-name>SignUpServlet</servlet-name>
+        <url-pattern>/SignUp1.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SignInServlet</servlet-name>
+        <url-pattern>/SignIn.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

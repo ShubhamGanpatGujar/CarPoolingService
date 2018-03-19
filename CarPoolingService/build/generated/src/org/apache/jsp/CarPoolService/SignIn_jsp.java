@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class SignIn_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -155,7 +155,7 @@ public final class Login_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("         <div class=\"account-wall\">\n");
       out.write("          <img class=\"profile-img\" src=\"Prologo.png\">\n");
       out.write("          \n");
-      out.write("          <form class=\"form-signin\" action=\"signin.do\" method=\"post\">\n");
+      out.write("          <form class=\"form-signin\" method=\"post\" action=\"SignIn.do\" >\n");
       out.write("          <input type=\"text\" class=\"form-control\" placeholder=\"Email / User Name\" required autofocus>\n");
       out.write("          <br>\n");
       out.write("          <input type=\"password\" class=\"form-control\" placeholder=\"Password\" required>\n");

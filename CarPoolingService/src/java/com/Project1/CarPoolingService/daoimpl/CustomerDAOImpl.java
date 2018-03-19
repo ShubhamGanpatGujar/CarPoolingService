@@ -30,7 +30,7 @@ public  class CustomerDAOImpl implements CustomerDAO {
             //return addEmployee(employee);
             Connection con = DerbyConnection.getConnection();
             PreparedStatement preparedStatement = con.prepareStatement("insert into Customer(customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword) values(?,?,?,?,?,?,?)");
-       preparedStatement.setString(1,customer.getCustomName());
+       preparedStatement.setString(1,customer.getCustomerName());
         preparedStatement.setString(2,customer.getCustomerContact());
         preparedStatement.setString(3,customer.getCustomerGender());
         preparedStatement.setString(4,customer.getCustomerEmail());
@@ -135,7 +135,7 @@ public  class CustomerDAOImpl implements CustomerDAO {
         try {
             Connection con  = DerbyConnection.getConnection();
             PreparedStatement preparedstatement = con.prepareStatement("update Customer set customerName=?,customerContact=?,customerGender=?,customerEmail=?,customerAddress=?,customerDateOfBirth=?,customerPassword=? where customerID=?");
-            preparedstatement.setString(1,customer.getCustomName());
+            preparedstatement.setString(1,customer.getCustomerName());
              preparedstatement.setString(2,customer.getCustomerContact());
              preparedstatement.setString(3,customer.getCustomerGender());
              preparedstatement.setString(4,customer.getCustomerEmail());
@@ -152,17 +152,28 @@ public  class CustomerDAOImpl implements CustomerDAO {
     }
 
     @Override
-    public boolean validate(String Email, String Password) {
-        
+    public boolean isUserValid(String customerEmail, String customerPassword) {
+        try{
+            Connection connection = DerbyConnection.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement("select * from Customer where customerEmail=? and customerPassword=?");
+            preparedStatement.setString(1, customerEmail);
+            preparedStatement.setString(2, customerPassword);
+            ResultSet resultSet = preparedStatement.executeQuery();
+            if(resultSet !=null){
+             return resultSet.next();
+            }
+               
+        }
+        catch (SQLException ex) {
+            Logger.getLogger(CustomerDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        System.out.println("Not Logging In");
         return false;
-        
-    
 
-    
-
+  
     }
-   
+}
+  
     
     
 
-}

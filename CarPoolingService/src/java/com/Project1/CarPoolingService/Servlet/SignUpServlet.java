@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author SHUBHAM
  */
-public class signupservlet extends HttpServlet {
+public class SignUpServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -35,20 +35,21 @@ public class signupservlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
-             String customerName;
+            /* TODO output your page here. You may use following sample code. */
+            String customerName;
             String customerContact;
             String customerGender;
             String customerEmail;
             String customerAddress;
             String customerDateOfBirth;  
             String customerPassword;
-            customerName = request.getParameter("customerName");
+             customerName = request.getParameter("customerName");
              customerContact = request.getParameter("customerContact");
-              customerGender = request.getParameter("customerGender");
-               customerEmail = request.getParameter("customerEmail");
-                customerAddress = request.getParameter("customerAddress");
-                 customerDateOfBirth = request.getParameter("customerDateOfBirth");
-                  customerPassword = request.getParameter("customerPassword");
+             customerGender = request.getParameter("customerGender");
+             customerEmail = request.getParameter("customerEmail");
+             customerAddress = request.getParameter("customerAddress");
+             customerDateOfBirth = request.getParameter("customerDateOfBirth");
+             customerPassword = request.getParameter("customerPassword");
                   CustomerDAO customerDAO = new CustomerDAOImpl();
                   int count = customerDAO.addCustomer(new Customer(customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword));
                   RequestDispatcher rd =null;
@@ -59,11 +60,12 @@ public class signupservlet extends HttpServlet {
                   else
                   {
                       
-                      rd=request.getRequestDispatcher("SingUp.jsp");
+                      rd=request.getRequestDispatcher("SignUp1.jsp");
                   } 
                rd.forward(request, response);
         }
     }
+       
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

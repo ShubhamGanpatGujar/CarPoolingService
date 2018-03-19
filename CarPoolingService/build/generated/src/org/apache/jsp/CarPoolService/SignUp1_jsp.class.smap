@@ -1,10 +1,10 @@
 SMAP
-SingUp1_jsp.java
+SignUp1_jsp.java
 JSP
 *S JSP
 *F
-+ 0 SingUp1.jsp
-CarPoolService/SingUp1.jsp
++ 0 SignUp1.jsp
+CarPoolService/SignUp1.jsp
 + 1 header3.jsp
 CarPoolService/header3.jsp
 *L

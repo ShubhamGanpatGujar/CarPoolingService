@@ -46,7 +46,7 @@
     <h1>Transport Your World</h1>
     <p>Lets ride today</p>
     <p>
-        <a class="btn btn-large btn-primary" href="Login.jsp">Sign in</a></p>
+        <a class="btn btn-large btn-primary" href="SignIn.jsp">Sign in</a></p>
   </div>
     </div>
     </div>
@@ -57,7 +57,7 @@
     <h1>Transport Your World</h1>
     <p>Lets ride today</p>
     <p>
-        <a class="btn btn-large btn-primary" href="SingUp.jsp">Sign up</a></p>
+        <a class="btn btn-large btn-primary" href="SignUp.jsp">Sign up</a></p>
       </div>
     </div>
     </div>

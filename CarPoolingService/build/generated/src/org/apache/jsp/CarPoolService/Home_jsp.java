@@ -157,7 +157,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <h1>Transport Your World</h1>\n");
       out.write("    <p>Lets ride today</p>\n");
       out.write("    <p>\n");
-      out.write("        <a class=\"btn btn-large btn-primary\" href=\"Login.jsp\">Sign in</a></p>\n");
+      out.write("        <a class=\"btn btn-large btn-primary\" href=\"SignIn.jsp\">Sign in</a></p>\n");
       out.write("  </div>\n");
       out.write("    </div>\n");
       out.write("    </div>\n");
@@ -168,7 +168,7 @@ public final class Home_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    <h1>Transport Your World</h1>\n");
       out.write("    <p>Lets ride today</p>\n");
       out.write("    <p>\n");
-      out.write("        <a class=\"btn btn-large btn-primary\" href=\"SingUp.jsp\">Sign up</a></p>\n");
+      out.write("        <a class=\"btn btn-large btn-primary\" href=\"SignUp.jsp\">Sign up</a></p>\n");
       out.write("      </div>\n");
       out.write("    </div>\n");
       out.write("    </div>\n");

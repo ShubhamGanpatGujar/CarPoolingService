@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 
-public final class SingUp1_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class SignUp1_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -124,7 +124,7 @@ public final class SingUp1_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</html>");
       out.write("\n");
       out.write("        \n");
-      out.write("        <form action=\"Singup.do\" method=\"post\">\n");
+      out.write("        <form action=\"SignUp1.do\" method=\"post\">\n");
       out.write("            Customer Name :<input type=\"text\" name=\"customerName\" /><br>\n");
       out.write("            <br/>\n");
       out.write("            Contact :<input type=\"text\" name=\"customerContact\" /><br>\n");

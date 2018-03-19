@@ -102,8 +102,7 @@
         
     </head>
     <body>
-        
-         
+           
           <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
@@ -117,7 +116,7 @@
          <div class="account-wall">
           <img class="profile-img" src="Prologo.png">
           
-          <form class="form-signin">
+          <form class="form-signin" method="post" action="SignIn.do" >
           <input type="text" class="form-control" placeholder="Email / User Name" required autofocus>
           <br>
           <input type="password" class="form-control" placeholder="Password" required>
@@ -128,7 +127,7 @@
           </form>
             </div>
              <div class="account-walls ">
-            <a href="SingUp.jsp" class="text-center new-account"> If New User ? Sing Up </a>
+            <a href="SignUp.jsp" class="text-center new-account"> If New User ? Sing Up </a>
         </div>
         </div>
     </div>
@@ -148,6 +147,7 @@
                     </div>
                 </div>
             </div>
+      
     </body>
 </html>
 

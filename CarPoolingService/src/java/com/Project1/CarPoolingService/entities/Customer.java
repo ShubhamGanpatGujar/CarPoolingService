@@ -53,7 +53,7 @@ public class Customer {
         this.customerID = customerID;
     }
 
-    public void setCustomName(String customName) {
+    public void setCustomName(String customerName) {
         this.customerName = customerName;
     }
 
@@ -89,7 +89,7 @@ public class Customer {
         return customerID;
     }
     
-    public String getCustomName() {
+    public String getCustomerName() {
         return customerName;
     }
 
