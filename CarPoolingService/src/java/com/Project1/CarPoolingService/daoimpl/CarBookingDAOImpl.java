@@ -32,9 +32,9 @@ public class CarBookingDAOImpl implements CarBookingDAO {
             PreparedStatement preparedStatement=con.prepareStatement("insert into CarBooking(carID,customerID,carbookingDate,carbookingTime) values(?,?,?,?)");
             preparedStatement.setInt(1,carbooking.getCarID());
             preparedStatement.setInt(2,carbooking.getCustomerID());
-            java.util.Date CarbookingDate =new java.util.Date(carbooking.getCarbookingDate());
-            preparedStatement.setDate(3, new Date(CarbookingDate.getYear(),CarbookingDate.getMonth(),CarbookingDate.getDate()));
-           preparedStatement.setString(4,carbooking.getCarbookingTime());
+            java.util.Date carbookingDate =new java.util.Date(carbooking.getCarbookingDate());
+        preparedStatement.setDate(3, new Date(carbookingDate.getYear(),carbookingDate.getMonth(),carbookingDate.getDate()));
+        preparedStatement.setString(4,carbooking.getCarbookingTime());
             
             count=preparedStatement.executeUpdate();
         } catch (SQLException ex) {
@@ -83,9 +83,9 @@ public class CarBookingDAOImpl implements CarBookingDAO {
                    int carbookingID =resultSet.getInt(1) ;
                    int carID=resultSet.getInt(2);
                    int customerID=resultSet.getInt(3) ;
-                  String carbookingDate=resultSet.getString(4).toString();
-                  String carbookingTime=resultSet.getString(5);
-                   
+                  String carbookingDate=resultSet.getDate(4).toString();
+                  String carbookingTime=resultSet.getTime(5).toString();
+                  
                     
                     CarBooking carbooking= new CarBooking(carbookingID,carID,customerID,carbookingDate,carbookingTime);
                     carbookingList.add(carbooking);
@@ -116,8 +116,8 @@ public class CarBookingDAOImpl implements CarBookingDAO {
                    int carbookingId =resultSet.getInt(1) ;
                    int carID=resultSet.getInt(2);
                    int customerID=resultSet.getInt(3) ;
-                  String carbookingDate=resultSet.getString(4).toString();
-                  String carbookingTime=resultSet.getString(5);
+                    String carbookingDate=resultSet.getDate(4).toString();
+                  String carbookingTime=resultSet.getTime(5).toString();
                   
                   CarBooking carbooking= new CarBooking(carbookingID,carID,customerID,carbookingDate,carbookingTime);
                     carbookingList.add(carbooking);
@@ -144,9 +144,11 @@ public class CarBookingDAOImpl implements CarBookingDAO {
             PreparedStatement preparedStatement = con.prepareStatement("update CarBooking set Carid=?,Customerid=?,CarbookingDate=?,CarbookingTime=? where CarBookingID=?");
            preparedStatement .setInt(1,carbooking.getCarID());
             preparedStatement .setInt(2,carbooking.getCustomerID());
-            java.util.Date CarbookingDate =new java.util.Date(carbooking.getCarbookingDate());
-        preparedStatement.setDate(3, new Date(CarbookingDate.getYear(),CarbookingDate.getMonth(),CarbookingDate.getDate()));
-           preparedStatement .setString(4,carbooking.getCarbookingTime());
+          java.util.Date carbookingDate =new java.util.Date(carbooking.getCarbookingDate());
+        preparedStatement.setDate(3, new Date(carbookingDate.getYear(),carbookingDate.getMonth(),carbookingDate.getDate()));
+        java.sql.Time carbookingTime=new java.sql.Time(24,24,24);
+         preparedStatement.setTime(4,new Time(carbookingTime.getHours(),carbookingTime.getMinutes(),carbookingTime.getSeconds()));
+            
            preparedStatement .setInt(5,carbooking.getCarbookingID());
             count=preparedStatement.executeUpdate();
         

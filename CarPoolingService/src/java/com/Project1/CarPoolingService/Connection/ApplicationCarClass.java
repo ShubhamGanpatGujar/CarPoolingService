@@ -24,7 +24,7 @@ public class ApplicationCarClass {
         // count=carDAO.deleteCar(1001);
         //if(count>0)System.out.println("Record Deleted Successfully");
         // else System.out.println("Record Failed to get deleted");
-       Car car = new Car(1000,5002,"maruti","n",4);
+       Car car = new Car(1000,"500","maruti","n",4);
        count=carDAO.updateCar(1000, car);
        if(count>0)System.out.println("Record Updated Successfully");
       else System.out.println("Record Failed to get updated");

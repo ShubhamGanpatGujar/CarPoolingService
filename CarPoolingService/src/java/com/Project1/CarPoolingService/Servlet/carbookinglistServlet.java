@@ -5,22 +5,23 @@
  */
 package com.Project1.CarPoolingService.Servlet;
 
-import com.Project1.CarPoolingService.dao.CustomerDAO;
-import com.Project1.CarPoolingService.daoimpl.CustomerDAOImpl;
+import com.Project1.CarPoolingService.dao.CarBookingDAO;
+import com.Project1.CarPoolingService.daoimpl.CarBookingDAOImpl;
+import com.Project1.CarPoolingService.entities.CarBooking;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author SHUBHAM
  */
-public class SignInServlet extends HttpServlet {
+public class carbookinglistServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,23 +37,18 @@ public class SignInServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-           String customerEmail;
-              String customerPassword;
-           customerEmail = request.getParameter("customerEmail");
-           customerPassword = request.getParameter("customerPassword");
-            CustomerDAO customerDAO = new CustomerDAOImpl();
-            RequestDispatcher rd = null;
-            if(customerDAO.isUserValid(customerEmail, customerPassword)){
-                HttpSession session = request.getSession();
-                session.setAttribute("Loginid",customerEmail);
-                rd = request.getRequestDispatcher("Home.jsp");
-            }
-            else{
-                rd = request.getRequestDispatcher("SignIn.jsp");
-            }
-            rd.forward(request, response);
+            System.out.println("Hello its a list");
+               CarBookingDAO carbookingDAO = new CarBookingDAOImpl ();
+           List<CarBooking> carbookingList= carbookingDAO.getAllCarBooking();
+            System.out.println("No of Records " + carbookingList.size());
+            if(carbookingList.size()>0){
+                request.setAttribute("carbookingList", carbookingList);
+                RequestDispatcher rd = request.getRequestDispatcher("carbookinglist.jsp");
+                rd.forward(request, response);
         }
-    }
+        }
+        
+            }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

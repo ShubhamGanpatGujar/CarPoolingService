@@ -94,7 +94,6 @@ public final class SignIn_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("    border-top-left-radius: 0;\n");
       out.write("    border-top-right-radius: 0;\n");
       out.write("}\n");
-      out.write("\n");
       out.write(".login-title\n");
       out.write("{\n");
       out.write("    color: #555;\n");
@@ -141,7 +140,8 @@ public final class SignIn_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        \n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("           \n");
+      out.write("        \n");
+      out.write("         \n");
       out.write("          <div class=\"container\">\n");
       out.write("    <div class=\"row\">\n");
       out.write("        <div class=\"col-sm-6 col-md-4 col-md-offset-4\">\n");
@@ -155,10 +155,11 @@ public final class SignIn_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("         <div class=\"account-wall\">\n");
       out.write("          <img class=\"profile-img\" src=\"Prologo.png\">\n");
       out.write("          \n");
-      out.write("          <form class=\"form-signin\" method=\"post\" action=\"SignIn.do\" >\n");
-      out.write("          <input type=\"text\" class=\"form-control\" placeholder=\"Email / User Name\" required autofocus>\n");
+      out.write("          <form class=\"form-signin\" method=\"post\" action=\"SingIn.do\">\n");
+      out.write("          <input required type=\"text\" class=\"form-control\" placeholder=\"Email\" Name=\"customerEmail\">\n");
       out.write("          <br>\n");
-      out.write("          <input type=\"password\" class=\"form-control\" placeholder=\"Password\" required>\n");
+      out.write("          <input required type=\"password\" class=\"form-control\" placeholder=\"Password\" name=\"customerPassword\">\n");
+      out.write("          <br>\n");
       out.write("          <button class=\"btn btn-lg btn-primary btn-block\" type=\"submit\">Sign in</button>\n");
       out.write("          <label class=\"checkbox pull-left\">\n");
       out.write("          <input type=\"checkbox\" value=\"remember-me\">Remember me </label>                \n");
@@ -166,7 +167,7 @@ public final class SignIn_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("          </form>\n");
       out.write("            </div>\n");
       out.write("             <div class=\"account-walls \">\n");
-      out.write("            <a href=\"SignUp.jsp\" class=\"text-center new-account\"> If New User ? Sing Up </a>\n");
+      out.write("            <a href=\"SingUp.jsp\" class=\"text-center new-account\"> If New User ? Sing Up </a>\n");
       out.write("        </div>\n");
       out.write("        </div>\n");
       out.write("    </div>\n");
@@ -186,12 +187,8 @@ public final class SignIn_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("                    </div>\n");
       out.write("                </div>\n");
       out.write("            </div>\n");
-      out.write("      \n");
       out.write("    </body>\n");
       out.write("</html>\n");
-      out.write("\n");
-      out.write("    \n");
-      out.write("\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

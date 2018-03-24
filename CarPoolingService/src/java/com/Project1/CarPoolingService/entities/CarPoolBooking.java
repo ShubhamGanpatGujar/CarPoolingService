@@ -23,81 +23,6 @@ public class CarPoolBooking {
     int routeID;
     int numberofPassenger;
 
-    public void setInvoiceID(int invoiceID) {
-        this.invoiceID = invoiceID;
-    }
-
-    public void setInvoiceDate(String invoiceDate) {
-        this.invoiceDate = invoiceDate;
-    }
-
-    public void setCarID(int carID) {
-        this.carID = carID;
-    }
-
-    public void setCarpoolbookingID(int carpoolbookingID) {
-        this.carpoolbookingID = carpoolbookingID;
-    }
-
-    public void setCarpoolbookingDate(String carpoolbookingDate) {
-        this.carpoolbookingDate = carpoolbookingDate;
-    }
-
-    public void setCarpoolbookingTime(String carpoolbookingTime) {
-        this.carpoolbookingTime = carpoolbookingTime;
-    }
-
-    public void setCustomrID(int customrID) {
-        this.customrID = customrID;
-    }
-
-    public void setRouteID(int routeID) {
-        this.routeID = routeID;
-    }
-
-    public void setNumberofPassenger(int numberofPassenger) {
-        this.numberofPassenger = numberofPassenger;
-    }
-    
-    
-    
-    public int getInvoiceID() {
-        return invoiceID;
-    }
-
-    public String getInvoiceDate() {
-        return invoiceDate;
-    }
-
-    public int getCarID() {
-        return carID;
-    }
-
-    public int getCarpoolbookingID() {
-        return carpoolbookingID;
-    }
-
-    public String getCarpoolbookingDate() {
-        return carpoolbookingDate;
-    }
-
-    public String getCarpoolbookingTime() {
-        return carpoolbookingTime;
-    }
-
-    public int getCustomrID() {
-        return customrID;
-    }
-
-    public int getRouteID() {
-        return routeID;
-    }
-
-    public int getNumberofPassenger() {
-        return numberofPassenger;
-    }
-    
-
     public CarPoolBooking(int invoiceID, String invoiceDate, int carID, int carpoolbookingID, String carpoolbookingDate, String carpoolbookingTime, int customrID, int routeID, int numberofPassenger) {
         this.invoiceID = invoiceID;
         this.invoiceDate = invoiceDate;
@@ -110,6 +35,77 @@ public class CarPoolBooking {
         this.numberofPassenger = numberofPassenger;
     }
 
-   
+    public int getInvoiceID() {
+        return invoiceID;
+    }
+
+    public void setInvoiceID(int invoiceID) {
+        this.invoiceID = invoiceID;
+    }
+
+    public String getInvoiceDate() {
+        return invoiceDate;
+    }
+
+    public void setInvoiceDate(String invoiceDate) {
+        this.invoiceDate = invoiceDate;
+    }
+
+    public int getCarID() {
+        return carID;
+    }
+
+    public void setCarID(int carID) {
+        this.carID = carID;
+    }
+
+    public int getCarpoolbookingID() {
+        return carpoolbookingID;
+    }
+
+    public void setCarpoolbookingID(int carpoolbookingID) {
+        this.carpoolbookingID = carpoolbookingID;
+    }
+
+    public String getCarpoolbookingDate() {
+        return carpoolbookingDate;
+    }
+
+    public void setCarpoolbookingDate(String carpoolbookingDate) {
+        this.carpoolbookingDate = carpoolbookingDate;
+    }
+
+    public String getCarpoolbookingTime() {
+        return carpoolbookingTime;
+    }
+
+    public void setCarpoolbookingTime(String carpoolbookingTime) {
+        this.carpoolbookingTime = carpoolbookingTime;
+    }
+
+    public int getCustomrID() {
+        return customrID;
+    }
+
+    public void setCustomrID(int customrID) {
+        this.customrID = customrID;
+    }
+
+    public int getRouteID() {
+        return routeID;
+    }
+
+    public void setRouteID(int routeID) {
+        this.routeID = routeID;
+    }
+
+    public int getNumberofPassenger() {
+        return numberofPassenger;
+    }
+
+    public void setNumberofPassenger(int numberofPassenger) {
+        this.numberofPassenger = numberofPassenger;
+    }
+
 
 }

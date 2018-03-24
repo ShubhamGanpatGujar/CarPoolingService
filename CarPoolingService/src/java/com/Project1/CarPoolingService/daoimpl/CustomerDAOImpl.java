@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package com.Project1.CarPoolingService.daoimpl;
-
 import com.Project1.CarPoolingService.dao.CustomerDAO;
 import com.Project1.CarPoolingService.entities.Customer;
 import java.sql.Connection;
@@ -16,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 
 /**
  *
@@ -37,7 +37,7 @@ public  class CustomerDAOImpl implements CustomerDAO {
         preparedStatement.setString(5,customer.getCustomerAddress());
         java.util.Date customerDateOfBirth =new java.util.Date(customer.getCustomerDateOfBirth());
         preparedStatement.setDate(6, new Date(customerDateOfBirth.getYear(),customerDateOfBirth.getMonth(),customerDateOfBirth.getDate()));
-        preparedStatement.setString(7,customer.getCustomerPassword()); 
+        preparedStatement.setString(7,customer.getCustomerPassword());
         count = preparedStatement.executeUpdate();
            
         } catch (SQLException ex) {
@@ -62,7 +62,7 @@ public  class CustomerDAOImpl implements CustomerDAO {
     }
 
     @Override
-    public List<Customer> getAllCustomers() {
+    public List<Customer> getAllCustomer() {
         List<Customer> customerList = null;
         try {
             Connection con = DerbyConnection.getConnection(); 
@@ -74,12 +74,14 @@ public  class CustomerDAOImpl implements CustomerDAO {
                 while(resultSet.next()){
                    int customerID =resultSet.getInt(1) ;
                    String customerName=resultSet.getString(2);
-                   String customerContact=resultSet.getString(3) ;
+                 String customerContact=resultSet.getString(3) ;
                    String customerGender=resultSet.getString(4);
                    String customerEmail=resultSet.getString(5);
                    String customerAddress=resultSet.getString(6);
                    String customerDateOfBirth = resultSet.getDate(7).toString();
-                   String customerPassword=resultSet.getString(8);
+                    String customerPassword=resultSet.getString(8);
+                   
+
                        
                     Customer customer = new Customer(customerID,customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword);
                     customerList.add(customer);
@@ -114,7 +116,8 @@ public  class CustomerDAOImpl implements CustomerDAO {
                    String customerEmail=resultSet.getString(5);
                    String customerAddress=resultSet.getString(6);
                    String customerDateOfBirth=resultSet.getDate(7).toString();
-                   String customerPassword=resultSet.getString(8);
+                      String customerPassword=resultSet.getString(8);
+
                     
                 Customer customer = new Customer(customerId,customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword);
                 customerList.add(customer);
@@ -134,7 +137,7 @@ public  class CustomerDAOImpl implements CustomerDAO {
        int count=0;
         try {
             Connection con  = DerbyConnection.getConnection();
-            PreparedStatement preparedstatement = con.prepareStatement("update Customer set customerName=?,customerContact=?,customerGender=?,customerEmail=?,customerAddress=?,customerDateOfBirth=?,customerPassword=? where customerID=?");
+            PreparedStatement preparedstatement = con.prepareStatement("update Customer set customerName=?,customerContact=?,customerGender=?,customerEmail=?,customerAddress=?,customerDateOfBirth=? customerPassword=? where customerID=?");
             preparedstatement.setString(1,customer.getCustomerName());
              preparedstatement.setString(2,customer.getCustomerContact());
              preparedstatement.setString(3,customer.getCustomerGender());
@@ -142,7 +145,7 @@ public  class CustomerDAOImpl implements CustomerDAO {
              preparedstatement.setString(5,customer.getCustomerAddress());
              java.util.Date customerDateOfBirth=new java.util.Date(customer.getCustomerDateOfBirth());
             preparedstatement.setDate(6,new Date(customerDateOfBirth.getYear(),customerDateOfBirth.getMonth(),customerDateOfBirth.getDate()));
-            preparedstatement.setString(7,customer.getCustomerPassword());
+             preparedstatement.setString(7,customer.getCustomerPassword());
             preparedstatement.setInt(8,customer.getCustomerID());
             count= preparedstatement.executeUpdate();
         } catch (SQLException ex) {
@@ -151,11 +154,12 @@ public  class CustomerDAOImpl implements CustomerDAO {
         return count;
     }
 
+   
     @Override
     public boolean isUserValid(String customerEmail, String customerPassword) {
-        try{
-            Connection connection = DerbyConnection.getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement("select * from Customer where customerEmail=? and customerPassword=?");
+    try{
+            Connection con = DerbyConnection.getConnection(); 
+            PreparedStatement preparedStatement = con.prepareStatement("select * from Customer where customerEmail=? and customerPassword=?");
             preparedStatement.setString(1, customerEmail);
             preparedStatement.setString(2, customerPassword);
             ResultSet resultSet = preparedStatement.executeQuery();
@@ -169,11 +173,11 @@ public  class CustomerDAOImpl implements CustomerDAO {
         }
         System.out.println("Not Logging In");
         return false;
-
-  
     }
-}
-  
     
+}
     
 
+    
+
+    

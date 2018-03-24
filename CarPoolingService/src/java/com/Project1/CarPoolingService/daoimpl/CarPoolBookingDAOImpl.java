@@ -24,6 +24,7 @@ import java.util.logging.Logger;
  */
 public class CarPoolBookingDAOImpl implements CarPoolBookingDAO {
 
+
     @Override
     public int addCarPoolBooking(CarPoolBooking carpoolbooking) {
     int count=0;
@@ -142,18 +143,19 @@ public class CarPoolBookingDAOImpl implements CarPoolBookingDAO {
          int count=0;
         try {
             Connection con  = DerbyConnection.getConnection();
-            PreparedStatement preparedStatement = con.prepareStatement("update CarPoolBooking set invoiceID=?,invoiceDate=?,carID=?,carpoolbookingDate=?,carpoolbookingTime=?,customerID=?,routeID=?,numberofPasenger=? where carpoolbookingID=?");
+            PreparedStatement preparedStatement = con.prepareStatement("update CarPoolBooking set invoiceID=?,invoiceDate=?,carID=?,carpoolbookingDate=?,carpoolbookingTime=?,customerID=?,routeID=?,numberofPassenger=? where carpoolbookingID=?");
             preparedStatement.setInt(1,carpoolbooking.getInvoiceID());
             java.util.Date Invoicedate =new java.util.Date(carpoolbooking.getInvoiceDate());
             preparedStatement.setDate(2, new Date(Invoicedate.getYear(),Invoicedate.getMonth(),Invoicedate.getDate()));
             preparedStatement.setInt(3,carpoolbooking.getCarID());
             java.util.Date carpoolbookingdate =new java.util.Date(carpoolbooking.getCarpoolbookingDate());
             preparedStatement.setDate(4, new Date(carpoolbookingdate.getYear(),carpoolbookingdate.getMonth(),carpoolbookingdate.getDate()));
-            
             preparedStatement.setString(5, carpoolbooking.getCarpoolbookingTime());
             preparedStatement.setInt(6,carpoolbooking.getCustomrID());
             preparedStatement.setInt(7,carpoolbooking.getRouteID());
             preparedStatement.setInt(8,carpoolbooking.getNumberofPassenger());
+            preparedStatement.setInt(9,carpoolbooking.getCarpoolbookingID());
+            
             count=preparedStatement.executeUpdate();
         
         

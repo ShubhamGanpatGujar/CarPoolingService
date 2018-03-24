@@ -22,6 +22,12 @@ public class Route {
         this.Distance = Distance;
     }
 
+    public Route(String startLocation, String Destination, int Distance) {
+         this.startLocation = startLocation;
+        this.Destination = Destination;
+        this.Distance = Distance;
+    }
+
     public void setRouteID(int routeID) {
         this.routeID = routeID;
     }

@@ -31,7 +31,7 @@ public class CarDAOImpl implements CarDAO {
             //return addEmployee(employee);
             Connection con = DerbyConnection.getConnection();
             PreparedStatement preparedStatement = con.prepareStatement("insert into Car(carNo,carModel,CarAC,carSeating) values(?,?,?,?)");
-            preparedStatement.setInt(1,car.getCarNo());
+            preparedStatement.setString(1,car.getCarNo());
             preparedStatement.setString(2,car.getCarModel());
             preparedStatement.setString(3,car.getCarAC());
             preparedStatement.setInt(4,car.getCarSeating());
@@ -74,7 +74,7 @@ public class CarDAOImpl implements CarDAO {
                 //resultSet.first();
                 while(resultSet.next()){
                     int carID=resultSet.getInt(1);
-                    int carNo=resultSet.getInt(2);
+                   String carNo=resultSet.getString(2);
                     String carModel= resultSet.getString(3);
                     String carAC= resultSet.getString(4);
                     int carSeating = resultSet.getInt(5);
@@ -104,7 +104,7 @@ public class CarDAOImpl implements CarDAO {
                 //resultSet.first();
                 while(resultSet.next()){
                     int carId=resultSet.getInt(1);
-                    int carNo=resultSet.getInt(2);
+                    String carNo=resultSet.getString(2);
                     String carModel= resultSet.getString(3);
                     String carAC= resultSet.getString(4);
                     int carSeating = resultSet.getInt(5);
@@ -130,7 +130,7 @@ public class CarDAOImpl implements CarDAO {
             Connection con  = DerbyConnection.getConnection();
             PreparedStatement preparedStatement = con.prepareStatement("update Car set carNo=?,carModel=?,carAC=?, carSeating=? where carID=?");
         
-            preparedStatement.setInt(1,car.getCarNo());
+            preparedStatement.setString(1,car.getCarNo());
             preparedStatement.setString(2,car.getCarModel());
             preparedStatement.setString(3,car.getCarAC());
             preparedStatement.setInt(4,car.getCarSeating());

@@ -97,10 +97,11 @@ public class RouteDAOImpl implements RouteDAO {
             if(resultSet!=null){
                 //resultSet.first();
                 while(resultSet.next()){
-                        int routeId=resultSet.getInt(1);
+                 int routeId=resultSet.getInt(1);
                     String startLocation= resultSet.getString(2);
                      String destination= resultSet.getString(3);
                     int distance = resultSet.getInt(4);
+                   
                     Route route = new Route(routeID,startLocation,destination,distance);
                     routeList.add(route);
 
@@ -123,12 +124,12 @@ public class RouteDAOImpl implements RouteDAO {
         int count=0;
         try {
             Connection con  = DerbyConnection.getConnection();
-            PreparedStatement preparedStatement = con.prepareStatement("update Route set startLocation=?, Destnation=? ,Distance=? where routeID=?");
+            PreparedStatement preparedStatement = con.prepareStatement("update Route set startLocation=?, Destination=? ,Distance=? where routeID=?");
            
             preparedStatement.setString(1,route.getStartLocation());
             preparedStatement.setString(2,route.getDestination());
             preparedStatement.setInt(3,route.getDistance());
-             preparedStatement.setInt(4,route.getRouteID());
+                  preparedStatement.setInt(4,route.getRouteID());
             count = preparedStatement.executeUpdate();
             
         } catch (SQLException ex) {

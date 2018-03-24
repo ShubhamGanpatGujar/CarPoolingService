@@ -10,7 +10,7 @@ package com.Project1.CarPoolingService.entities;
  * @author SHUBHAM
  */
 public class CarPoolRoute {
-    int carpoolrouteID;
+      int carpoolrouteID;
     int routeID;
     int passengerCapacity;
     int price;

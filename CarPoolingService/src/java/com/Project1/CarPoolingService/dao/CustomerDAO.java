@@ -15,10 +15,8 @@ import java.util.List;
 public interface CustomerDAO { 
     int addCustomer(Customer customer);
      int deleteCustomer(int customerID);
-     List<Customer> getAllCustomers();
+     List<Customer> getAllCustomer();
      Customer getCustomerByID (int customerID);
-     boolean isUserValid(String customerEmail,String customerPassword);
+     boolean isUserValid(String customerEmail ,String customerPassword);
      int updateCustomer(int customerID,Customer customer);
-
-   
 }

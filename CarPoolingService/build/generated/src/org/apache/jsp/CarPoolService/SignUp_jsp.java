@@ -67,7 +67,7 @@ public final class SignUp_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("<body>\n");
       out.write("    <div class=\"container\">\n");
       out.write("\t<div class=\"row\">\n");
-      out.write("            <form class=\"form-horizontal\" action=\"SignUp1.do\" method=\"post\">\n");
+      out.write("            <form class=\"form-horizontal\" action=\"SignUp.do\" method=\"post\">\n");
       out.write("            <br>\n");
       out.write("             <a href=\"Home.jsp\">\n");
       out.write("    <img src=\"carpoollogo.png\" alt=\"logo\" style=\"width:40px;\">\n");

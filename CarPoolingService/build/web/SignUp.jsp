@@ -28,7 +28,7 @@
 <body>
     <div class="container">
 	<div class="row">
-            <form class="form-horizontal" action="SignUp1.do" method="post">
+            <form class="form-horizontal" action="SignUp.do" method="post">
             <br>
              <a href="Home.jsp">
     <img src="carpoollogo.png" alt="logo" style="width:40px;">

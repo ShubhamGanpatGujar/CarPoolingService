@@ -19,9 +19,16 @@ public class CarBooking {
     String carbookingDate;
     String carbookingTime; 
 
-    public CarBooking(int carbookingID, int carID, int customerID, String carbookingDate, String carbookingTime) {
+    public CarBooking(int carbookingID, int carID, int customerID ,String  carbookingDate, String  carbookingTime) {
         this.carbookingID = carbookingID;
         this.carID = carID;
+        this.customerID = customerID;
+        this.carbookingDate = carbookingDate;
+        this.carbookingTime = carbookingTime;
+    }
+
+    public CarBooking(int carID,int customerID ,String  carbookingDate, String  carbookingTime) {
+     this.carID = carID;
         this.customerID = customerID;
         this.carbookingDate = carbookingDate;
         this.carbookingTime = carbookingTime;
@@ -39,11 +46,11 @@ public class CarBooking {
         this.customerID = customerID;
     }
 
-    public void setCarbookingDate(String carbookingDate) {
+    public void setCarbookingDate(String  carbookingDate) {
         this.carbookingDate = carbookingDate;
     }
 
-    public void setCarbookingTime(String carbookingTime) {
+    public void setCarbookingTime(String  carbookingTime) {
         this.carbookingTime = carbookingTime;
     }
     
@@ -59,11 +66,11 @@ public class CarBooking {
         return customerID;
     }
 
-    public String getCarbookingDate() {
+    public String  getCarbookingDate() {
         return carbookingDate;
     }
 
-    public String getCarbookingTime() {
+    public String  getCarbookingTime() {
         return carbookingTime;
     }
    

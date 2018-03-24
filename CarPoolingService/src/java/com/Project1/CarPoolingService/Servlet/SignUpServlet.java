@@ -36,6 +36,7 @@ public class SignUpServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+             System.out.println("Hello Servlet");
             String customerName;
             String customerContact;
             String customerGender;
@@ -60,12 +61,11 @@ public class SignUpServlet extends HttpServlet {
                   else
                   {
                       
-                      rd=request.getRequestDispatcher("SignUp1.jsp");
+                      rd=request.getRequestDispatcher("SignUp.jsp");
                   } 
                rd.forward(request, response);
         }
     }
-       
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

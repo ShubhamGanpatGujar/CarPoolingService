@@ -4,13 +4,13 @@
  * and open the template in the editor.
  */
 package com.Project1.CarPoolingService.entities;
+
+import java.util.Date;
+
 /**
  *
  * @author SHUBHAM
  */
-import java.util.Date;
-
-
 public class Customer {
             int customerID  ;
             String customerName;
@@ -18,22 +18,14 @@ public class Customer {
             String customerGender;
             String customerEmail;
             String customerAddress;
-            String customerDateOfBirth;  
+            String customerDateOfBirth; 
             String customerPassword;
 
     
 
-   
-    public Customer(String customerName, String customerContact, String customerGender, String customerEmail, String customerAddress, String customerDateOfBirth,String customerPassword) {
-        this.customerName = customerName;
-        this.customerContact = customerContact;
-        this.customerGender = customerGender;
-        this.customerEmail = customerEmail;
-        this.customerAddress = customerAddress;
-        this.customerDateOfBirth = customerDateOfBirth;
-        this.customerPassword = customerPassword;
-    }
-   
+    
+
+    
             
 
     public Customer(int customerID, String customerName, String customerContact, String customerGender, String customerEmail, String customerAddress, String customerDateOfBirth,String customerPassword) {
@@ -45,7 +37,20 @@ public class Customer {
         this.customerAddress = customerAddress;
         this.customerDateOfBirth = customerDateOfBirth;
         this.customerPassword = customerPassword;
+       
     }
+
+    public Customer(String customerName, String customerContact, String customerGender, String customerEmail, String customerAddress, String customerDateOfBirth, String customerPassword) {
+        this.customerName = customerName;
+        this.customerContact = customerContact;
+        this.customerGender = customerGender;
+        this.customerEmail = customerEmail;
+        this.customerAddress = customerAddress;
+        this.customerDateOfBirth = customerDateOfBirth;
+        this.customerPassword = customerPassword;
+    }
+
+    
 
    
 
@@ -53,7 +58,7 @@ public class Customer {
         this.customerID = customerID;
     }
 
-    public void setCustomName(String customerName) {
+    public void setCustomerName(String customName) {
         this.customerName = customerName;
     }
 
@@ -77,11 +82,10 @@ public class Customer {
         this.customerDateOfBirth = customerDateOfBirth;
     }
     
-
-    public void setCustomerPassword(String customerPassword) {
-        this.customerPassword = customerPassword;
+     public void setCustomerPassword(String customerPassword) {
+        this.customerPassword =customerPassword;
     }
-
+    
   
     
     
@@ -116,4 +120,6 @@ public class Customer {
    public String getCustomerPassword() {
         return customerPassword;
     }
+
+   
 }
