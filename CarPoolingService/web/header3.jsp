@@ -51,19 +51,21 @@
      <li class="nav-item">
       <a class="nav-link" href="Information.jsp">Information</a>
     </li>
+    <li class="nav-item">
+    <li class="dropdown">
+        <a class ="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="carbookinglist.view">Car Booking List</a>
+               <li><a href="carpoolbookinglist.view">Car pool Booking List</a>
+                <li><a href="CustomerList.view">Customer List</a>
+                <li><a href="EditCustomer.jsp">Edit</a>
+            </ul>
+    </li>
+  </li>
+    
   </ul>
 </nav>
-
-                
-        
-        
-        
-
-
-  
-  
-  
-
     </body>
    
 </html>

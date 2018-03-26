@@ -5,15 +5,14 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
+        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+     
+        
          <%@include file="header3.jsp" %>
        <h2>List of Car Booking</h2>
+       <table style="width: 100%">
+           
+       </table>
        <table border="1">
     <thead >
     <th>Car Booking ID</th>
@@ -23,27 +22,24 @@
     <th>Car booking Time</th>
     </thead>
     <tbody>
-        <%--<c:if test="not employeeList equals  null" var="emp">--%>
+       
         
-        <c:forEach  var="carbooking" items="${carbookinglist}">
+        <c:forEach  var="carbooking" items="${carbookingList}">
         <tr>
             <td><c:out value="${carbooking.carbookingID}"/></td>      
             <td><c:out value="${carbooking.carID}"/></td>
             <td><c:out value="${carbooking.customerID}"/></td>
             <td><c:out value="${carbooking.carbookingDate}"/></td>
             <td><c:out value="${carbooking.carbookingTime}"/></td>
-            <td>Details</td>
-            <td>Edit</td>
-            <td>Delete</td>
-            
+        <td><a href="carbookinglist.jsp?carbookingID= ${carbooking.carbookingID}">DETAILS</a></td>
         </tr>
         </c:forEach>
-        <%--</c:if>--%>
-        <c:if test="carbookingList equals  null" var="carbooking">
-            <%out.println("No record");%>
+    
+       <c:if test="${empty carbookinglist}" var="cb">
+           
         </c:if>
     </tbody>
     
 </table>
-    </body>
-</html>
+   
+

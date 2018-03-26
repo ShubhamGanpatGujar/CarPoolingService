@@ -5,9 +5,9 @@
  */
 package com.Project1.CarPoolingService.Servlet;
 
-import com.Project1.CarPoolingService.dao.CarDAO;
-import com.Project1.CarPoolingService.daoimpl.CarDAOImpl;
-import com.Project1.CarPoolingService.entities.Car;
+import com.Project1.CarPoolingService.dao.CustomerDAO;
+import com.Project1.CarPoolingService.daoimpl.CustomerDAOImpl;
+import com.Project1.CarPoolingService.entities.Customer;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -20,7 +20,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author SHUBHAM
  */
-public class CarServlet extends HttpServlet {
+public class EditCustomerServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,31 +36,45 @@ public class CarServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            String carNo;
-           String carModel;
-           String carAC;
-           int carSeating;
-            carNo = request.getParameter("carNo");
-            carModel = request.getParameter("carModel");
-            carAC=request.getParameter("carAC");
-             carSeating=Integer.parseInt(request.getParameter("carSeating"));
-       CarDAO carDAO = new CarDAOImpl();
-                  int count = carDAO.addCar(new Car(carNo,carModel,carAC,carSeating));
-                  System.out.println(count);
-                  RequestDispatcher rd =null;
-                  if (count>0) 
-                  {
-                      rd=request.getRequestDispatcher("Home.jsp");
-                  }
-                  else
-                  {
-                      
-                      rd=request.getRequestDispatcher("Car.jsp");
-                  } 
-               rd.forward(request, response);
+            int customerID;
+           
+            String action = request.getParameter("action");
+            System.out.println("List Of Customers");
+            customerID = Integer.parseInt(request.getParameter("customerID"));
+            CustomerDAO customerDAO = new CustomerDAOImpl();
+            int count = 0;
+            if(action.equals("Save Changes")){
+            String customerName;
+            String customerContact;
+            String customerGender;
+            String customerEmail;
+            String customerAddress;
+            String customerDateOfBirth;  
+            String customerPassword;   
+               customerName = request.getParameter("customerName");
+               customerContact = request.getParameter("customerContact");
+               customerGender = request.getParameter("customerGender");
+               customerEmail = request.getParameter("customerEmail");
+               customerAddress = request.getParameter("customerAddress");
+               customerDateOfBirth = request.getParameter("customerDateOfBirth");
+               customerPassword = request.getParameter("customerPassword");
+                
+                count = customerDAO.updateCustomer(customerID,new Customer(customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword));
+                }
+            else if(action.equals("Delete")){
+                count = customerDAO.deleteCustomer(customerID);
+            }
+             RequestDispatcher rd = null;
+            if(count>0){
+               rd = request.getRequestDispatcher("CustomerList.view");
+            }
+            else{
+                rd = request.getRequestDispatcher("CustomerList.jsp?custID="+customerID);
+            }
+            rd.include(request,response);
+            
         }
     }
-
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**

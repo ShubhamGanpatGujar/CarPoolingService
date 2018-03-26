@@ -5,11 +5,12 @@
  */
 package com.Project1.CarPoolingService.Servlet;
 
-import com.Project1.CarPoolingService.dao.CarDAO;
-import com.Project1.CarPoolingService.daoimpl.CarDAOImpl;
-import com.Project1.CarPoolingService.entities.Car;
+import com.Project1.CarPoolingService.dao.CustomerDAO;
+import com.Project1.CarPoolingService.daoimpl.CustomerDAOImpl;
+import com.Project1.CarPoolingService.entities.Customer;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +21,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author SHUBHAM
  */
-public class CarServlet extends HttpServlet {
+public class CustomerListServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,32 +37,20 @@ public class CarServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            String carNo;
-           String carModel;
-           String carAC;
-           int carSeating;
-            carNo = request.getParameter("carNo");
-            carModel = request.getParameter("carModel");
-            carAC=request.getParameter("carAC");
-             carSeating=Integer.parseInt(request.getParameter("carSeating"));
-       CarDAO carDAO = new CarDAOImpl();
-                  int count = carDAO.addCar(new Car(carNo,carModel,carAC,carSeating));
-                  System.out.println(count);
-                  RequestDispatcher rd =null;
-                  if (count>0) 
-                  {
-                      rd=request.getRequestDispatcher("Home.jsp");
-                  }
-                  else
-                  {
-                      
-                      rd=request.getRequestDispatcher("Car.jsp");
-                  } 
-               rd.forward(request, response);
+             CustomerDAO customerDAO = new CustomerDAOImpl ();
+            List<Customer> customerList = customerDAO.getAllCustomer();
+            System.out.println("No of Records " + customerList.size());
+            if(customerList.size()>0)
+            {
+                 
+                request.setAttribute("customerList", customerList);
+               
+                RequestDispatcher rd = request.getRequestDispatcher("CustomerList.jsp");
+                rd.forward(request, response);
+                System.out.println("Done");
         }
     }
-
-
+    }
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.

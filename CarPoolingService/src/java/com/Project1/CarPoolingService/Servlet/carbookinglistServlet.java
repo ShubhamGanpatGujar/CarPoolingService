@@ -40,11 +40,12 @@ public class carbookinglistServlet extends HttpServlet {
             System.out.println("Hello its a list");
                CarBookingDAO carbookingDAO = new CarBookingDAOImpl ();
            List<CarBooking> carbookingList= carbookingDAO.getAllCarBooking();
-            System.out.println("No of Records " + carbookingList.size());
+           
             if(carbookingList.size()>0){
                 request.setAttribute("carbookingList", carbookingList);
                 RequestDispatcher rd = request.getRequestDispatcher("carbookinglist.jsp");
                 rd.forward(request, response);
+                 System.out.println("No of Records " + carbookingList.size());
         }
         }
         

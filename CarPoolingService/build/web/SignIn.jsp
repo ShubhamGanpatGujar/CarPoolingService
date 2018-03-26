@@ -55,7 +55,6 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-
 .login-title
 {
     color: #555;
@@ -102,7 +101,8 @@
         
     </head>
     <body>
-           
+        
+         
           <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
@@ -116,10 +116,11 @@
          <div class="account-wall">
           <img class="profile-img" src="Prologo.png">
           
-          <form class="form-signin" method="post" action="SignIn.do" >
-          <input type="text" class="form-control" placeholder="Email / User Name" required autofocus>
+          <form class="form-signin" method="post" action="SingIn.do">
+          <input required type="text" class="form-control" placeholder="Email" Name="customerEmail">
           <br>
-          <input type="password" class="form-control" placeholder="Password" required>
+          <input required type="password" class="form-control" placeholder="Password" name="customerPassword">
+          <br>
           <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
           <label class="checkbox pull-left">
           <input type="checkbox" value="remember-me">Remember me </label>                
@@ -127,7 +128,7 @@
           </form>
             </div>
              <div class="account-walls ">
-            <a href="SignUp.jsp" class="text-center new-account"> If New User ? Sing Up </a>
+            <a href="SingUp.jsp" class="text-center new-account"> If New User ? Sing Up </a>
         </div>
         </div>
     </div>
@@ -147,9 +148,5 @@
                     </div>
                 </div>
             </div>
-      
     </body>
 </html>
-
-    
-

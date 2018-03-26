@@ -29,13 +29,13 @@ public class ApplicationCarBookingClass {
 //       CarBooking carbooking = new CarBooking(100001,1006,10,"10/10/2015","01:02:00");
 //       count=carbookingDAO.updateCarBooking(1, carbooking);
 //       if(count>0)System.out.println("Record Updated Successfully");
-//      else System.out.println("Record Failed to get updated");
-       List<CarBooking> carbookinglist = carbookingDAO.getAllCarBooking();
-        for(CarBooking cb: carbookinglist){
-          System.out.println(cb.getCarbookingID()+ "|" + cb.getCarID()+ "|" + cb.getCustomerID()+ "|" + cb.getCarbookingDate()+ "|" + cb.getCarbookingTime());
-       }
-       CarBooking cb = carbookingDAO.getCarBookingByID(5000);
-             System.out.println(cb.getCarbookingID()+ "|" + cb.getCarID()+ "|" + cb.getCustomerID()+ "|" + cb.getCarbookingDate()+ "|" + cb.getCarbookingTime());
+////      else System.out.println("Record Failed to get updated");
+//       List<CarBooking> carbookinglist = carbookingDAO.getAllCarBooking();
+//        for(CarBooking cb: carbookinglist){
+//          System.out.println(cb.getCarbookingID()+ "|" + cb.getCarID()+ "|" + cb.getCustomerID()+ "|" + cb.getCarbookingDate()+ "|" + cb.getCarbookingTime());
+//       }
+//       CarBooking cb = carbookingDAO.getCarBookingByID(5000);
+//             System.out.println(cb.getCarbookingID()+ "|" + cb.getCarID()+ "|" + cb.getCustomerID()+ "|" + cb.getCarbookingDate()+ "|" + cb.getCarbookingTime());
     }
       
 }

@@ -37,7 +37,7 @@ public class carpoolbookinglistServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            System.out.println("Hello its a list");
+            System.out.println("Hello its a car pool list");
                CarPoolBookingDAO carpoolbookingDAO = new CarPoolBookingDAOImpl ();
            List<CarPoolBooking> carpoolbookingList= carpoolbookingDAO.getAllCarPoolBooking();
             System.out.println("No of Records " + carpoolbookingList.size());

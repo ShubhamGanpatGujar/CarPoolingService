@@ -28,7 +28,7 @@
            }
     </style>
     <body>
-        <%@include file="header3.jsp" %>
+       <%@include file="header3.jsp" %>
         
                 
 <div id="demo" class="carousel slide" data-ride="carousel">
@@ -77,23 +77,23 @@
          <div class="container-marketing">
             <div class="row">
                 <div class="col-lg-4">
-                   <img src="image4.jpeg"  width="304" height="236"> 
-                    <p><a class="btn btn-default" href="Car.jsp">Book your car</a></p>
+                   <img src="image4.jpeg" class="rounded-circle" alt="Cinque Terre" width="304" height="236"> 
+                    <p><a class="btn btn-default" href="#">Book your car</a></p>
                 </div>
             </div>
          </div>
     
             
-
+            <div class="row">
                 <div class="col-lg-4">
-                    <img src="image2.jpeg"  width="304" height="236"> 
-                    <p><a class="btn btn-default" href="Route.jsp">Book your carpoolservice</a></p>
+                    <img src="image2.jpeg" class="rounded-circle" alt="Cinque Terre" width="304" height="236"> 
+                    <p><a class="btn btn-default" href="carbookinglist.jsp">Book your carpoolservice</a></p>
                 </div>
             </div>
         
-  
+  </div>
         </div>
-       
+        
         <%@include file="Footer.jsp" %>
     </body>
 </html>

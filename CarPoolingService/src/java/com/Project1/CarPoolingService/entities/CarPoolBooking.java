@@ -19,7 +19,7 @@ public class CarPoolBooking {
     int carpoolbookingID;
     String carpoolbookingDate;
     String carpoolbookingTime;
-    int customrID;
+    int customerID;
     int routeID;
     int numberofPassenger;
 
@@ -30,7 +30,7 @@ public class CarPoolBooking {
         this.carpoolbookingID = carpoolbookingID;
         this.carpoolbookingDate = carpoolbookingDate;
         this.carpoolbookingTime = carpoolbookingTime;
-        this.customrID = customrID;
+        this.customerID = customrID;
         this.routeID = routeID;
         this.numberofPassenger = numberofPassenger;
     }
@@ -83,12 +83,12 @@ public class CarPoolBooking {
         this.carpoolbookingTime = carpoolbookingTime;
     }
 
-    public int getCustomrID() {
-        return customrID;
+    public int getCustomerID() {
+        return customerID;
     }
 
-    public void setCustomrID(int customrID) {
-        this.customrID = customrID;
+    public void setCustomerID(int customerID) {
+        this.customerID = customerID;
     }
 
     public int getRouteID() {

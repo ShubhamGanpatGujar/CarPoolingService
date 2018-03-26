@@ -38,7 +38,7 @@ public class CarPoolBookingDAOImpl implements CarPoolBookingDAO {
            java.util.Date carpoolbookingdate =new java.util.Date(carpoolbooking.getCarpoolbookingDate());
             preparedStatement.setDate(4, new Date(carpoolbookingdate.getYear(),carpoolbookingdate.getMonth(),carpoolbookingdate.getDate()));
             preparedStatement.setString(5,carpoolbooking.getCarpoolbookingTime());
-            preparedStatement.setInt(6,carpoolbooking.getCustomrID());
+            preparedStatement.setInt(6,carpoolbooking.getCustomerID());
             preparedStatement.setInt(7,carpoolbooking.getRouteID());
             preparedStatement.setInt(8,carpoolbooking.getNumberofPassenger());
             
@@ -151,7 +151,7 @@ public class CarPoolBookingDAOImpl implements CarPoolBookingDAO {
             java.util.Date carpoolbookingdate =new java.util.Date(carpoolbooking.getCarpoolbookingDate());
             preparedStatement.setDate(4, new Date(carpoolbookingdate.getYear(),carpoolbookingdate.getMonth(),carpoolbookingdate.getDate()));
             preparedStatement.setString(5, carpoolbooking.getCarpoolbookingTime());
-            preparedStatement.setInt(6,carpoolbooking.getCustomrID());
+            preparedStatement.setInt(6,carpoolbooking.getCustomerID());
             preparedStatement.setInt(7,carpoolbooking.getRouteID());
             preparedStatement.setInt(8,carpoolbooking.getNumberofPassenger());
             preparedStatement.setInt(9,carpoolbooking.getCarpoolbookingID());

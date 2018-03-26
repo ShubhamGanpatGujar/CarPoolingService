@@ -45,7 +45,7 @@ public class SingInServlet extends HttpServlet {
             if(customerDAO.isUserValid(customerEmail, customerPassword)){
                 HttpSession session = request.getSession();
                 session.setAttribute("loginid", customerEmail);
-                rd = request.getRequestDispatcher("SignUp.jsp");
+                rd = request.getRequestDispatcher("Home.jsp");
             }
             else{
                 rd = request.getRequestDispatcher("SignIn.jsp");

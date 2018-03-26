@@ -1,10 +1,11 @@
 <%-- 
     Document   : Route
-    Created on : 23 Mar, 2018, 1:11:57 AM
-    Author     : SHUBHAM
+    Created on : 23 Mar, 2018, 3:56:00 AM
+    Author     : sanket
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -21,7 +22,7 @@
     <body>
          <div class="container">
 	<div class="row">
-            <form class="form-horizontal" action="route.do" method="post">
+            <form class="form-horizontal" action="Route.do" method="post">
             <br>
              <a href="Home.jsp">
     <img src="carpoollogo.png" alt="logo" style="width:40px;">
