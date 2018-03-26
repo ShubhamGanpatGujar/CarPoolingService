@@ -39,8 +39,9 @@ public class EditCustomerServlet extends HttpServlet {
             int customerID;
            
             String action = request.getParameter("action");
+            
+            customerID = Integer.parseInt(request.getParameter("customerID").trim());
             System.out.println("List Of Customers");
-            customerID = Integer.parseInt(request.getParameter("customerID"));
             CustomerDAO customerDAO = new CustomerDAOImpl();
             int count = 0;
             if(action.equals("Save Changes")){

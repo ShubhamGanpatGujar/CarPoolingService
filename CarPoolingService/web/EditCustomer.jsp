@@ -8,10 +8,10 @@
 <%@page import="com.Project1.CarPoolingService.daoimpl.CustomerDAOImpl"%>
 <%@page import="com.Project1.CarPoolingService.entities.Customer"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@include file="header3.jsp" %>
+<%@include file="header.jsp" %>
 <p>
 <form action="EditCustomer.do" method="get">
-
+    <br><br><br><br>
 <%
 Customer customer = new CustomerDAOImpl().getCustomerByID(Integer.parseInt(request.getParameter("customerID")));
 request.setAttribute("customer",customer);

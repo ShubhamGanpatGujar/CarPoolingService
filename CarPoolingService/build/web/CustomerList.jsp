@@ -35,7 +35,7 @@
             <td><c:out value="${customer.customerAddress}"/></td>
             <td><c:out value="${customer.customerDateOfBirth}"/></td>
             <td><c:out value="${customer.customerPassword}"/></td>
-            <td><a href="EditCustomer.jsp?customerID= ${customer.customerID}">DETAILS</a></td>
+            <td><a href="EditCustomer.jsp?customerID=${customer.customerID}">DETAILS</a></td>
             
         </tr>
         </c:forEach>

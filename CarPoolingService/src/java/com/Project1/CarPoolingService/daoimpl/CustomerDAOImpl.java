@@ -51,7 +51,7 @@ public  class CustomerDAOImpl implements CustomerDAO {
         int count=0;
         try {
             Connection con=DerbyConnection.getConnection();
-            PreparedStatement preparedstatement=con.prepareStatement("Delete from Customer where CustomerID=?");
+            PreparedStatement preparedstatement=con.prepareStatement("Delete from Customer where customerID=?");
             
             preparedstatement.setInt(1,customerID);
             count=preparedstatement.executeUpdate();

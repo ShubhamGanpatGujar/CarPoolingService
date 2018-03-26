@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-       <%@include file="header3.jsp" %>
+       <%@include file="header.jsp" %>
        <h1>hiiii it is About us</h1>
        <%@include file="Footer.jsp" %>
     </body>
