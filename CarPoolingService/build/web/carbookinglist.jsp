@@ -10,6 +10,22 @@
         
          <%@include file="header.jsp" %>
          <br><br><br><br>
+          <style>
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+</style>
+<div class ="container">
        <h2>List of Car Booking</h2>
        <table style="width: 100%">
            
@@ -42,5 +58,6 @@
     </tbody>
     
 </table>
-   
-
+</div>
+   <br><br><br><br>
+<%@include file="Footer.jsp" %>

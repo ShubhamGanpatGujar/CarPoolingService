@@ -128,7 +128,7 @@
           </form>
             </div>
              <div class="account-walls ">
-            <a href="SingUp.jsp" class="text-center new-account"> If New User ? Sing Up </a>
+            <a href="SignUp.jsp" class="text-center new-account"> If New User ? Sing Up </a>
         </div>
         </div>
     </div>

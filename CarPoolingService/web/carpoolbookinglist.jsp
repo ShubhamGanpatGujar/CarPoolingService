@@ -11,9 +11,27 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+         <%@include file="header.jsp" %>
+         <br><br><br><br>
+          <style>
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
+</style>
+
     </head>
     <body>
-      
+        <div class ="container">
         <table style="width: 100%">
            
         </table>
@@ -54,5 +72,8 @@
     </tbody>
     
 </table>
+        </div>
     </body>
 </html>
+<br><br><br><br>
+<%@include file="Footer.jsp" %>

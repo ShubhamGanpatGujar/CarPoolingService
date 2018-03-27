@@ -32,6 +32,30 @@
         <servlet-name>CustomerListServlet</servlet-name>
         <servlet-class>com.Project1.CarPoolingService.Servlet.CustomerListServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RouteListServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.RouteListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarListServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.CarListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PickupListServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.PickupListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarpoolrouteListServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.CarpoolrouteListServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditCarSevlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.EditCarSevlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CarBookingServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.CarBookingServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CarServlet</servlet-name>
         <url-pattern>/Car.do</url-pattern>
@@ -63,6 +87,30 @@
     <servlet-mapping>
         <servlet-name>CustomerListServlet</servlet-name>
         <url-pattern>/CustomerList.view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RouteListServlet</servlet-name>
+        <url-pattern>/RouteList.view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarListServlet</servlet-name>
+        <url-pattern>/CarList.view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>PickupListServlet</servlet-name>
+        <url-pattern>/PickupList.view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarpoolrouteListServlet</servlet-name>
+        <url-pattern>/CarpoolrouteList.view</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditCarSevlet</servlet-name>
+        <url-pattern>/EditCar.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarBookingServlet</servlet-name>
+        <url-pattern>/CarBooking.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

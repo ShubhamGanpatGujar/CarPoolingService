@@ -31,7 +31,7 @@ carpooling can help. Check out South Florida Commuter Services to see how these 
       <div class="container">
   <div class="row">
     <div class="col-sm-4">
-<h4>Carpooling Helps Save You Money</h4>
+        <h2>Carpooling Helps Save You Money</h2>
 <p>You can save money on gas and such by diving up the gas fees among your carpool passengers. 
 The more people you have the more you can save. Carpooling also helps you save on the cost of vehicle repairs and maintenance
 if you rotate vehicle use between the members of your carpool team. Additionally, you and everyone else can save some money on road fees 
@@ -41,14 +41,14 @@ year using taxpayer’s money.</p>
       
       
     <div class="col-sm-4">
-<h4>Carpooling Helps the Environment</h4>
+<h2>Carpooling Helps the Environment</h2>
 <p>Carpooling cuts down on the number of cars and vehicle son the road. Fewer cars means there is less carbon and other gasses and pollution getting into the air.
     This protects the environment by keeping the air, water, and land cleaner.</p>
     </div>
       
        
     <div class="col-sm-4">
-<h4>It is Good for You</h4>
+        <h2>It is Good for You</h2>
 <p>According to numerous health reports and research, air pollution caused by auto emissions can significantly increase the likelihood of health issues such as 
 asthma, allergies, lung cancer, COPD, and the like. Research data has also suggested that carpooling can be far less stressful than simply commuting on your own.
 </p>
@@ -56,14 +56,14 @@ asthma, allergies, lung cancer, COPD, and the like. Research data has also sugge
       
         
     <div class="col-sm-4">
-<h4>Carpooling is a Very Convenient Option</h4>
+<h2>Carpooling is a Very Convenient Option</h2>
 <p>Carpooling is an option that can give you great flexibility. If you need to carpool three days a week or five, you can do so. Whatever your needs are,
 you can look for people who need that same schedule or who can add you to their drive route on the days you need a ride. The flexibility makes it a very convenient option for any long commute.
 </p>
     </div>
       
     <div class="col-sm-4">
-<h4>It Helps You Make New Friends</h4>
+<h2>It Helps You Make New Friends</h2>
 <p>Carpooling is also a wonderful way to meet interesting people, get to know the people you work with or go to school with, and to make new friends!</p>
     </div>
   </div>

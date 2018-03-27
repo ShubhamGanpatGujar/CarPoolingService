@@ -18,9 +18,9 @@ public class ApplicationCarPoolRouteClass {
  public static void main(String[] args){
         CarPoolRouteDAO carpoolrouteDAO = new CarPoolRouteDAOImpl();
        int count;
-      count = carpoolrouteDAO.addCarPoolRoute(new CarPoolRoute(2,10000,5,500));
-      if(count>0)System.out.println("Record Added Successfully");
-       else System.out.println("Record Failed to get added");
+//      count = carpoolrouteDAO.addCarPoolRoute(new CarPoolRoute(2,10000,5,500));
+//      if(count>0)System.out.println("Record Added Successfully");
+//       else System.out.println("Record Failed to get added");
       
 //      count=carpoolrouteDAO.deleteCarPoolRoute(20000);
 //      if(count>0)System.out.println("Record Deleted Successfully");
@@ -34,10 +34,10 @@ public class ApplicationCarPoolRouteClass {
        
        List<CarPoolRoute> carpoolroutelist = carpoolrouteDAO.getAllCarPoolRoute();
         for(CarPoolRoute cpr: carpoolroutelist){
-        System.out.println(cpr.getCarPoolrouteID()+ "|" + cpr.getRouteID()+ "|" + cpr.getPassengerCapacity()+ "|" + cpr.getPrice());
+        System.out.println(cpr.getCarpoolrouteID()+ "|" + cpr.getRouteID()+ "|" + cpr.getPassengerCapacity()+ "|" + cpr.getPrice());
        }
        CarPoolRoute cpr = carpoolrouteDAO.getCarPoolRouteByID(20000);
-     System.out.println(cpr.getCarPoolrouteID()+ "|" + cpr.getRouteID()+ "|" + cpr.getPassengerCapacity()+ "|" + cpr.getPrice());
+     System.out.println(cpr.getCarpoolrouteID()+ "|" + cpr.getRouteID()+ "|" + cpr.getPassengerCapacity()+ "|" + cpr.getPrice());
       }
       
 }

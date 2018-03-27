@@ -124,6 +124,7 @@
   textarea {
       resize: none;
   }
+ 
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -136,22 +137,25 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Logo</a>
+        <a class="navbar-brand" href="Home.jsp" ><img src="carpoollogo.png" alt="logo" style="width:40px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="Home.jsp">HOME</a></li>
-        <li><a href="ContactUs.jsp">Contact Us</a></li>
-        <li><a href="AboutUs.jsp">About Us</a></li>
-        <li><a href="Information.jsp">Information</a></li>
+        <li><a href="ContactUs.jsp">CONTACT US</a></li>
+        <li><a href="AboutUs.jsp">ABOUT US</a></li>
+        <li><a href="Information.jsp">INFORMATION</a></li>
             <li class="dropdown">
         <a class ="dropdown-toggle" data-toggle="dropdown" href="#">MORE
             <span class="caret"></span></a>
             <ul class="dropdown-menu">
+                <li><a href="CarList.view">Car List</a>
                 <li><a href="carbookinglist.view">Car Booking List</a>
-               <li><a href="carpoolbookinglist.view">Car pool Booking List</a>
+                <li><a href="carpoolbookinglist.view">Car pool Booking List</a>
+                <li><a href="CarpoolrouteList.view">Car Pool Route List</a>
                 <li><a href="CustomerList.view">Customer List</a>
-                <li><a href="EditCustomer.jsp">Edit</a>
+                <li><a href="PickupList.view">PickUp List</a>
+                <li><a href="RouteList.view">Route List</a>
             </ul>
     </li>
          

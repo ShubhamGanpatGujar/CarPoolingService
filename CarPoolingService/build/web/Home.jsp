@@ -15,7 +15,7 @@
       font: 400 15px/1.8 Lato, sans-serif;
       color: #777;
   }
-  h3, h4 {
+  h2, h4 {
       margin: 10px 0 30px 0;
       letter-spacing: 10px;      
       font-size: 20px;
@@ -55,7 +55,7 @@
       <div class="item active">
         <img src="image4.jpeg" alt="Image4" width="1200" height="700">
         <div class="carousel-caption">
-          <h3>Transport Your World</h3>
+          <h2>Transport Your World</h2>
           <p>Lets ride today</p>
            <p>
         <a class="btn btn-large btn-primary" href="SignIn.jsp">Sign in</a></p>
@@ -65,7 +65,7 @@
       <div class="item">
         <img src="image2.jpeg" alt="image2" width="1200" height="600">
         <div class="carousel-caption">
-          <h3>Transport Your World</h3>
+          <h2>Transport Your World</h2>
           <p>Lets ride today</p>
           <p>
         <a class="btn btn-large btn-primary" href="SignUp.jsp">Sign up</a></p>
@@ -85,7 +85,7 @@
 </div>
     
     
-    <div id="band" class="container text-center">
+    <div id="car pool" class="container text-center">
   <p><em>Car Pooling</em></p>There are many great benefits to carpooling, many of which people do not know about or even think about.
 With these benefits in mind, it will be easier than ever to see why making the switch, even for just a few
 days a week, can be a good idea for you and your commute. Wherever you are in the South Florida area,
@@ -94,31 +94,30 @@ carpooling can help. Check out South Florida Commuter Services to see how these 
   <br>
   <div class="row">
     <div class="col-sm-6">
-      <p class="text-center"><strong>Name</strong></p><br>
+      <p class="text-center"><strong>Car Booking</strong></p><br>
       <a href="#demo" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="image2.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo" class="collapse">
-        <p>Guitarist and Lead Vocalist</p>
-        <p>Loves long walks on the beach</p>
-        <p>Member since 1988</p>
+        <p>Book Your Car Now</p>
+        <p><a href="CarBooking.jsp">Click For Booking</a></p>
+        
       </div>
     </div>
     <div class="col-sm-6">
-      <p class="text-center"><strong>Name</strong></p><br>
+      <p class="text-center"><strong>Car Pool Booking</strong></p><br>
       <a href="#demo2" data-toggle="collapse">
-        <img src="bandmember.jpg" class="img-circle person" alt="Random Name" width="255" height="255">
+        <img src="image4.jpeg" class="img-circle person" alt="Random Name" width="255" height="255">
       </a>
       <div id="demo2" class="collapse">
-        <p>Drummer</p>
-        <p>Loves drummin'</p>
-        <p>Member since 1988</p>
+        <p>Share Our Car Now</p>
+        <p><a href="CarBooking.jsp">Click For Pool Booking</a></p>
       </div>
     </div>
    
   </div>
 </div>
-
+    <%@include file="Footer.jsp" %>
     </body>
 </html>
 

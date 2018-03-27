@@ -137,7 +137,7 @@ public  class CustomerDAOImpl implements CustomerDAO {
        int count=0;
         try {
             Connection con  = DerbyConnection.getConnection();
-            PreparedStatement preparedstatement = con.prepareStatement("update Customer set customerName=?,customerContact=?,customerGender=?,customerEmail=?,customerAddress=?,customerDateOfBirth=? customerPassword=? where customerID=?");
+            PreparedStatement preparedstatement = con.prepareStatement("update Customer set customerName=?,customerContact=?,customerGender=?,customerEmail=?,customerAddress=?,customerDateOfBirth=?,customerPassword=? where customerID=?");
             preparedstatement.setString(1,customer.getCustomerName());
              preparedstatement.setString(2,customer.getCustomerContact());
              preparedstatement.setString(3,customer.getCustomerGender());

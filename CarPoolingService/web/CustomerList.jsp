@@ -8,11 +8,29 @@
         <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
      
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-        
-        
+        <%@include file="header.jsp" %>
+         <br><br><br><br>
+        <style>
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+
+th, td {
+    padding: 15px;
+}
+
+</style>
+<div class ="container">
        <h2>List of Customers</h2>
-       <table style="width: 100%">
-</table>
+      
        <table border="1">
     <thead >
     <th>Customer Name</th>
@@ -46,4 +64,6 @@
     </tbody>
     
 </table>
-   
+</div>
+        <br><br><br><br>
+   <%@include file="Footer.jsp" %>
