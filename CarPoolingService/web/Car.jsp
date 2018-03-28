@@ -16,7 +16,7 @@
         <title>JSP Page</title>
        
     </head>
-    <body>
+   <body>
           
                 <div class="container">
 	<div class="row">
@@ -28,12 +28,12 @@
             <br><br>
 <fieldset>
 
-<legend>Add Car Details on Transport your world</legend>
+<legend>Book Car For Traveling on Transport your world</legend>
                  
             
             
 <div class="form-group">
-  <label class="col-md-4 control-label" for="car model">Car Model</label>  
+  <label class="col-md-4 control-label" for="carModel">Car Model</label>  
   <div class="col-md-6">
       <input id="Name" name="carModel" type="text" placeholder="Car Model" class="form-control input-md" required="">
     
@@ -53,7 +53,7 @@
   </div>
 </div>
           <div class="form-group">
-  <label class="col-md-4 control-label" for="car model">Car Number</label>  
+  <label class="col-md-4 control-label" for="carNo">Car Number</label>  
   <div class="col-md-6">
       <input id="Name" name="carNo" type="text" placeholder="Car Number" class="form-control input-md" required="">
     
@@ -71,6 +71,83 @@
   </div>
 </div>   
              
+<div class="form-group">
+  <label class="col-md-4 control-label" for="startLocation">Start Location</label>  
+  <div class="col-md-5">
+      <select name="startLocation" >
+         <option value="Borivali">Borivali</option>
+         <option value="Kandivali">Kandivali</option>
+         <option value="Mald">Malad</option>
+          <option value="Goregaon">Goregaon</option>
+         <option value="Jogeshwari">Jogeshwari</option>
+         <option value="Andheri">Andheri</option>
+          <option value="Vile Parle">Vile Parle</option>
+         <option value="Santacruz">Santacruz</option>
+         <option value="Khar Road">Khar Road</option>
+          <option value="Bandra">Bandra</option>
+         <option value="Mahim Junction">Mahim</option>
+         <option value="Matunga">Matunga</option>
+          <option value="Dadar">Dadar</option>
+         <option value="Elphinston">Elphinston</option>
+         <option value="Lower Parel">Lower Parel</option>
+          <option value="Mumbai Central">Mumbai Central</option>
+         <option value="Grant Road">Grant Road</option>
+         <option value="Charni Road">Charni Road</option>
+          <option value="Marine Lines">Marine Lines</option>
+         <option value=" Churchgate"> Churchgate</option>
+         
+      </select>                             
+  
+  </div>
+</div>
+          <div class="form-group">
+  <label class="col-md-4 control-label" for="Destination">Destination</label>  
+  <div class="col-md-5">
+      <select name="Destination" >
+         <option value="Borivali">Borivali</option>
+         <option value="Kandivali">Kandivali</option>
+         <option value="Mald">Malad</option>
+          <option value="Goregaon">Goregaon</option>
+         <option value="Jogeshwari">Jogeshwari</option>
+         <option value="Andheri">Andheri</option>
+          <option value="Vile Parle">Vile Parle</option>
+         <option value="Santacruz">Santacruz</option>
+         <option value="Khar Road">Khar Road</option>
+          <option value="Bandra">Bandra</option>
+         <option value="Mahim Junction">Mahim</option>
+         <option value="Matunga">Matunga</option>
+          <option value="Dadar">Dadar</option>
+         <option value="Elphinston">Elphinston</option>
+         <option value="Lower Parel">Lower Parel</option>
+          <option value="Mumbai Central">Mumbai Central</option>
+         <option value="Grant Road">Grant Road</option>
+         <option value="Charni Road">Charni Road</option>
+          <option value="Marine Lines">Marine Lines</option>
+         <option value=" Churchgate"> Churchgate</option>
+         
+      </select>                             
+  
+  </div>
+</div>
+
+              <div class="form-group">
+  <label class="col-md-4 control-label" for="Distance">Distance</label>  
+  <div class="col-md-2">
+      <input id="Name" name="Distance" type="text" placeholder="Kilo-meter" class="form-control input-md"required="">
+    
+  </div>
+</div> 
+
+
+              <div class="form-group">
+  <label class="col-md-4 control-label" for="pickupPoint">PickUp Point</label>  
+  <div class="col-md-2">
+      <input id="Name" name="pickupPoint" type="text" placeholder="Pick Location" class="form-control input-md"required="">
+    
+  </div>
+</div> 
+
+
           <div class="form-group">
   <label class="col-md-4 control-label" for="submit"></label>
   <div class="col-md-6">

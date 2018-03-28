@@ -35,7 +35,7 @@
   }
   @media (max-width: 600px) {
     .carousel-caption {
-      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+      
     }
   }
         </style>
@@ -57,8 +57,7 @@
         <div class="carousel-caption">
           <h2>Transport Your World</h2>
           <p>Lets ride today</p>
-           <p>
-        <a class="btn btn-large btn-primary" href="SignIn.jsp">Sign in</a></p>
+
         </div>      
       </div>
 
@@ -67,21 +66,20 @@
         <div class="carousel-caption">
           <h2>Transport Your World</h2>
           <p>Lets ride today</p>
-          <p>
-        <a class="btn btn-large btn-primary" href="SignUp.jsp">Sign up</a></p>
+
         </div>      
       </div>
     
       
     <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+<!--    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
       <span class="sr-only">Previous</span>
     </a>
     <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-    </a>
+    </a>-->
 </div>
     
     
@@ -100,7 +98,7 @@ carpooling can help. Check out South Florida Commuter Services to see how these 
       </a>
       <div id="demo" class="collapse">
         <p>Book Your Car Now</p>
-        <p><a href="CarBooking.jsp">Click For Booking</a></p>
+        <p><a href="Car.jsp">Click For Booking</a></p>
         
       </div>
     </div>

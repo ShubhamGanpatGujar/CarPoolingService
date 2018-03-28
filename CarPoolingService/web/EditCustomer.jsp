@@ -55,9 +55,9 @@ request.setAttribute("customer",customer);
             </div>
              <br><br>
              
-             <label class="col-md-4 control-label" > Customer Date OF Birth</label> 
+             <label class="col-md-4 control-label" >Customer Date OF Birth</label> 
              <div class="col-md-5">
-            <input type="text" name="cuatomer DateOfBirth" value="${customer.customerDateOfBirth}" />
+            <input type="text" name="customerDateOfBirth" value="${customer.customerDateOfBirth}" />
              </div>
              <br><br>
              

@@ -36,16 +36,14 @@ public class CarBookingServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-            int carID;
-            int customerID;
+  
             String carbookingDate;
             String carbookingTime;
-            carID=Integer.parseInt(request.getParameter("carID"));
-            customerID =Integer.parseInt(request.getParameter("customerID"));
+          
            carbookingDate= request.getParameter("carbookingDate");
             carbookingTime=request.getParameter("carbookingTime");             
        CarBookingDAO carbookingDAO = new CarBookingDAOImpl();
-                  int count = carbookingDAO.addCarBooking(new CarBooking(carID,customerID,carbookingDate,carbookingTime));
+                  int count = carbookingDAO.addCarBooking(new CarBooking(carbookingDate,carbookingTime));
                   System.out.println(count);
                   RequestDispatcher rd =null;
                   if (count>0) 

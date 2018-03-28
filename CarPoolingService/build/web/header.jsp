@@ -158,7 +158,13 @@
                 <li><a href="RouteList.view">Route List</a>
             </ul>
     </li>
-         
+         <li class="dropdown">
+        <a class ="dropdown-toggle" data-toggle="dropdown" href="#">Profile
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="Home1.jsp">Sign out</a>
+                         </ul>
+    </li>
         <li><a href="Search.jsp"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
     </div>

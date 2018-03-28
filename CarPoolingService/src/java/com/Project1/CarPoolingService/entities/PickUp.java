@@ -20,6 +20,10 @@ public class PickUp {
         this.routeID = routeID;
     }
 
+    public PickUp(String pickupPoint) {
+         this.pickupPoint = pickupPoint;
+    }
+
   
     
 

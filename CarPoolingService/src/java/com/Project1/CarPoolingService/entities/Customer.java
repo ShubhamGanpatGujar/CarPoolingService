@@ -36,6 +36,7 @@ public class Customer {
         this.customerEmail = customerEmail;
         this.customerAddress = customerAddress;
         this.customerDateOfBirth = customerDateOfBirth;
+         System.out.println("Date Of Birth---- "+ customerDateOfBirth);
         this.customerPassword = customerPassword;
        
     }
@@ -47,6 +48,7 @@ public class Customer {
         this.customerEmail = customerEmail;
         this.customerAddress = customerAddress;
         this.customerDateOfBirth = customerDateOfBirth;
+        System.out.println("Date Of Birth---- "+ customerDateOfBirth);
         this.customerPassword = customerPassword;
     }
 
@@ -58,7 +60,7 @@ public class Customer {
         this.customerID = customerID;
     }
 
-    public void setCustomerName(String customName) {
+    public void setCustomerName(String customerName) {
         this.customerName = customerName;
     }
 

@@ -143,11 +143,13 @@ public  class CustomerDAOImpl implements CustomerDAO {
              preparedstatement.setString(3,customer.getCustomerGender());
              preparedstatement.setString(4,customer.getCustomerEmail());
              preparedstatement.setString(5,customer.getCustomerAddress());
-             java.util.Date customerDateOfBirth=new java.util.Date(customer.getCustomerDateOfBirth());
-            preparedstatement.setDate(6,new Date(customerDateOfBirth.getYear(),customerDateOfBirth.getMonth(),customerDateOfBirth.getDate()));
-             preparedstatement.setString(7,customer.getCustomerPassword());
-            preparedstatement.setInt(8,customer.getCustomerID());
+            java.util.Date customerDateOfBirth=new java.util.Date(customer.getCustomerDateOfBirth());
+             System.out.println("customer : : : "+ customerDateOfBirth);
+            preparedstatement.setDate(6,new Date(customerDateOfBirth.getYear(),customerDateOfBirth.getMonth(),customerDateOfBirth.getDate()));           
+            preparedstatement.setString(7,customer.getCustomerPassword());
+            preparedstatement.setInt(8,customerID);
             count= preparedstatement.executeUpdate();
+            System.out.println("count for customer " +count );
         } catch (SQLException ex) {
             Logger.getLogger(CustomerDAOImpl.class.getName()).log(Level.SEVERE, null, ex);
         }

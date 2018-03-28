@@ -29,24 +29,7 @@
 <legend>Add Car Details on Transport your world</legend>
                  
             
-            
-<div class="form-group">
-  <label class="col-md-4 control-label" for="carID">Car ID</label>  
-  <div class="col-md-6">
-      <input id="Name" name="carID" type="text" placeholder="Car ID" class="form-control input-md" required="">
-    
-  </div>
-</div>
-                 
-                
 
-          <div class="form-group">
-  <label class="col-md-4 control-label" for="customerID">Customer ID</label>  
-  <div class="col-md-6">
-      <input id="Name" name="customerID" type="text" placeholder="CustomerID" class="form-control input-md" required="">
-    
-  </div>
-</div>
 
               <div class="form-group">
   <label class="col-md-4 control-label" for="carbookingdate">Car Booking Date</label>

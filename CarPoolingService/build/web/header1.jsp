@@ -1,6 +1,6 @@
 <%-- 
-    Document   : header
-    Created on : 26 Mar, 2018, 6:02:53 PM
+    Document   : header1
+    Created on : 28 Mar, 2018, 3:48:46 PM
     Author     : SHUBHAM
 --%>
 
@@ -11,8 +11,6 @@
         <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
@@ -22,7 +20,6 @@
   }
   h3, h4 {
       margin: 10px 0 30px 0;
-      letter-spacing: 10px;      
       font-size: 20px;
       color: #111;
   }
@@ -137,39 +134,18 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-        <a class="navbar-brand" href="Home.jsp" ><img src="carpoollogo.png" alt="logo" style="width:40px;"></a>
+        <a class="navbar-brand" href="Home1.jsp" ><img src="carpoollogo.png" alt="logo" style="width:40px;"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="Home.jsp">HOME</a></li>
-        <li><a href="ContactUs.jsp">CONTACT US</a></li>
-        <li><a href="AboutUs.jsp">ABOUT US</a></li>
-        <li><a href="Information.jsp">INFORMATION</a></li>
-            <li class="dropdown">
-        <a class ="dropdown-toggle" data-toggle="dropdown" href="#">MORE
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="CarList.view">Car List</a>
-                <li><a href="carbookinglist.view">Car Booking List</a>
-                <li><a href="carpoolbookinglist.view">Car pool Booking List</a>
-                <li><a href="CarpoolrouteList.view">Car Pool Route List</a>
-                <li><a href="CustomerList.view">Customer List</a>
-                <li><a href="PickupList.view">PickUp List</a>
-                <li><a href="RouteList.view">Route List</a>
-            </ul>
-    </li>
-         <li class="dropdown">
-        <a class ="dropdown-toggle" data-toggle="dropdown" href="#">Profile
-            <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-                <li><a href="Home1.jsp">Sign out</a>
-                         </ul>
-    </li>
-        <li><a href="Search.jsp"><span class="glyphicon glyphicon-search"></span></a></li>
+        <li><a href="Home1.jsp">HOME</a></li>
+        <li><a href="SignIn.jsp">Sign In</a></li>
+        <li><a href="SignUp.jsp">Sign Up</a></li>
       </ul>
     </div>
   </div>
 </nav>
     </body>
 </html>
+
 

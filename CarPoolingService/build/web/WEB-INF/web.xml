@@ -5,10 +5,6 @@
         <servlet-class>com.Project1.CarPoolingService.Servlet.CarServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>RouteServlet</servlet-name>
-        <servlet-class>com.Project1.CarPoolingService.Servlet.RouteServlet</servlet-class>
-    </servlet>
-    <servlet>
         <servlet-name>SignUpServlet</servlet-name>
         <servlet-class>com.Project1.CarPoolingService.Servlet.SignUpServlet</servlet-class>
     </servlet>
@@ -59,10 +55,6 @@
     <servlet-mapping>
         <servlet-name>CarServlet</servlet-name>
         <url-pattern>/Car.do</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>RouteServlet</servlet-name>
-        <url-pattern>/Route.do</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>SignUpServlet</servlet-name>

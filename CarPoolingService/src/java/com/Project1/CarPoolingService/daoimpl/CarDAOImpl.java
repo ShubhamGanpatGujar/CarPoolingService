@@ -134,7 +134,7 @@ public class CarDAOImpl implements CarDAO {
             preparedStatement.setString(2,car.getCarModel());
             preparedStatement.setString(3,car.getCarAC());
             preparedStatement.setInt(4,car.getCarSeating());
-            preparedStatement.setInt(5,car.getCarID());
+            preparedStatement.setInt(5,carID);
             count=preparedStatement.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(CarDAOImpl.class.getName()).log(Level.SEVERE, null, ex);

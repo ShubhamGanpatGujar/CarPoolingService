@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -59,9 +60,10 @@ public class EditCustomerServlet extends HttpServlet {
                customerAddress = request.getParameter("customerAddress");
                customerDateOfBirth = request.getParameter("customerDateOfBirth");
                customerPassword = request.getParameter("customerPassword");
-                
+                System.out.println("Date Of Birth "+ customerDateOfBirth);
                 count = customerDAO.updateCustomer(customerID,new Customer(customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword));
-                }
+                System.out.println("count : " + count);    
+            }
             else if(action.equals("Delete")){
                 count = customerDAO.deleteCustomer(customerID);
             }

@@ -27,10 +27,10 @@ public class CarBooking {
         this.carbookingTime = carbookingTime;
     }
 
-    public CarBooking(int carID,int customerID ,String  carbookingDate, String  carbookingTime) {
-     this.carID = carID;
-        this.customerID = customerID;
-        this.carbookingDate = carbookingDate;
+
+
+    public CarBooking(String carbookingDate, String carbookingTime) {
+         this.carbookingDate = carbookingDate;
         this.carbookingTime = carbookingTime;
     }
 
