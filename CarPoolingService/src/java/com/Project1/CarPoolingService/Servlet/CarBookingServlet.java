@@ -5,9 +5,13 @@
  */
 package com.Project1.CarPoolingService.Servlet;
 
-import com.Project1.CarPoolingService.dao.CarBookingDAO;
-import com.Project1.CarPoolingService.daoimpl.CarBookingDAOImpl;
-import com.Project1.CarPoolingService.entities.CarBooking;
+
+import com.Project1.CarPoolingService.dao.CarPoolBookingDAO;
+import com.Project1.CarPoolingService.dao.RouteDAO;
+import com.Project1.CarPoolingService.daoimpl.CarPoolBookingDAOImpl;
+import com.Project1.CarPoolingService.daoimpl.RouteDAOImpl;
+import com.Project1.CarPoolingService.entities.CarPoolBooking;
+import com.Project1.CarPoolingService.entities.Route;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.RequestDispatcher;
@@ -36,14 +40,26 @@ public class CarBookingServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
-  
-            String carbookingDate;
-            String carbookingTime;
-          
-           carbookingDate= request.getParameter("carbookingDate");
-            carbookingTime=request.getParameter("carbookingTime");             
-       CarBookingDAO carbookingDAO = new CarBookingDAOImpl();
-                  int count = carbookingDAO.addCarBooking(new CarBooking(carbookingDate,carbookingTime));
+            
+            
+            
+             String startLocation;
+            String Destination;
+            int Distance;
+            String carpoolbookingDate;
+            String carpoolbookingTime;
+            int numberofPassenger;
+            
+            startLocation = request.getParameter("startLocation");
+            Destination=request.getParameter("Destination");
+             Distance=Integer.parseInt(request.getParameter("Distance"));
+           carpoolbookingDate= request.getParameter("carpoolbookingDate");
+            carpoolbookingTime=request.getParameter("carpoolbookingTime"); 
+            numberofPassenger=Integer.parseInt(request.getParameter("numberofPassenger"));    
+            RouteDAO routeDAO = new RouteDAOImpl();
+       CarPoolBookingDAO carpoolbookingDAO = new CarPoolBookingDAOImpl();
+        int count = routeDAO.addRoute(new Route(startLocation,Destination,Distance));
+                   carpoolbookingDAO.addCarPoolBooking(new CarPoolBooking(carpoolbookingDate,carpoolbookingTime,numberofPassenger));
                   System.out.println(count);
                   RequestDispatcher rd =null;
                   if (count>0) 

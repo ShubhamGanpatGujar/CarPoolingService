@@ -5,13 +5,16 @@
  */
 package com.Project1.CarPoolingService.Servlet;
 
+import com.Project1.CarPoolingService.dao.CarBookingDAO;
 import com.Project1.CarPoolingService.dao.CarDAO;
 import com.Project1.CarPoolingService.dao.PickUpDAO;
 import com.Project1.CarPoolingService.dao.RouteDAO;
+import com.Project1.CarPoolingService.daoimpl.CarBookingDAOImpl;
 import com.Project1.CarPoolingService.daoimpl.CarDAOImpl;
 import com.Project1.CarPoolingService.daoimpl.PickUpDAOImpl;
 import com.Project1.CarPoolingService.daoimpl.RouteDAOImpl;
 import com.Project1.CarPoolingService.entities.Car;
+import com.Project1.CarPoolingService.entities.CarBooking;
 import com.Project1.CarPoolingService.entities.PickUp;
 import com.Project1.CarPoolingService.entities.Route;
 import java.io.IOException;
@@ -47,9 +50,10 @@ public class CarServlet extends HttpServlet {
            String carAC;
            int carSeating;
            
-           String startLocation;
-            String Destination;
-            int Distance;
+     
+            
+            String carbookingDate;
+            String carbookingTime;
             
             String pickupPoint;
             
@@ -57,15 +61,22 @@ public class CarServlet extends HttpServlet {
             carModel = request.getParameter("carModel");
             carAC=request.getParameter("carAC");
              carSeating=Integer.parseInt(request.getParameter("carSeating"));
-             startLocation = request.getParameter("startLocation");
-            Destination=request.getParameter("Destination");
-             Distance=Integer.parseInt(request.getParameter("Distance"));
+             
+             
+             
+             carbookingDate= request.getParameter("carbookingDate");
+            carbookingTime=request.getParameter("carbookingTime"); 
+            
               pickupPoint=request.getParameter("pickupPoint");
+              
        CarDAO carDAO = new CarDAOImpl();
-         RouteDAO routeDAO = new RouteDAOImpl();
+         
          PickUpDAO pickupDAO = new PickUpDAOImpl();
+          CarBookingDAO carbookingDAO = new CarBookingDAOImpl();
+          
                   int count = carDAO.addCar(new Car(carNo,carModel,carAC,carSeating));
-                             routeDAO.addRoute(new Route(startLocation,Destination,Distance));
+                             
+                             carbookingDAO.addCarBooking(new CarBooking(carbookingDate,carbookingTime));
                              pickupDAO.addPickUp(new PickUp(pickupPoint));
                   System.out.println(count);
                   RequestDispatcher rd =null;

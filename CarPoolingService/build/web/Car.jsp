@@ -71,72 +71,21 @@
   </div>
 </div>   
              
-<div class="form-group">
-  <label class="col-md-4 control-label" for="startLocation">Start Location</label>  
-  <div class="col-md-5">
-      <select name="startLocation" >
-         <option value="Borivali">Borivali</option>
-         <option value="Kandivali">Kandivali</option>
-         <option value="Mald">Malad</option>
-          <option value="Goregaon">Goregaon</option>
-         <option value="Jogeshwari">Jogeshwari</option>
-         <option value="Andheri">Andheri</option>
-          <option value="Vile Parle">Vile Parle</option>
-         <option value="Santacruz">Santacruz</option>
-         <option value="Khar Road">Khar Road</option>
-          <option value="Bandra">Bandra</option>
-         <option value="Mahim Junction">Mahim</option>
-         <option value="Matunga">Matunga</option>
-          <option value="Dadar">Dadar</option>
-         <option value="Elphinston">Elphinston</option>
-         <option value="Lower Parel">Lower Parel</option>
-          <option value="Mumbai Central">Mumbai Central</option>
-         <option value="Grant Road">Grant Road</option>
-         <option value="Charni Road">Charni Road</option>
-          <option value="Marine Lines">Marine Lines</option>
-         <option value=" Churchgate"> Churchgate</option>
-         
-      </select>                             
-  
-  </div>
-</div>
-          <div class="form-group">
-  <label class="col-md-4 control-label" for="Destination">Destination</label>  
-  <div class="col-md-5">
-      <select name="Destination" >
-         <option value="Borivali">Borivali</option>
-         <option value="Kandivali">Kandivali</option>
-         <option value="Mald">Malad</option>
-          <option value="Goregaon">Goregaon</option>
-         <option value="Jogeshwari">Jogeshwari</option>
-         <option value="Andheri">Andheri</option>
-          <option value="Vile Parle">Vile Parle</option>
-         <option value="Santacruz">Santacruz</option>
-         <option value="Khar Road">Khar Road</option>
-          <option value="Bandra">Bandra</option>
-         <option value="Mahim Junction">Mahim</option>
-         <option value="Matunga">Matunga</option>
-          <option value="Dadar">Dadar</option>
-         <option value="Elphinston">Elphinston</option>
-         <option value="Lower Parel">Lower Parel</option>
-          <option value="Mumbai Central">Mumbai Central</option>
-         <option value="Grant Road">Grant Road</option>
-         <option value="Charni Road">Charni Road</option>
-          <option value="Marine Lines">Marine Lines</option>
-         <option value=" Churchgate"> Churchgate</option>
-         
-      </select>                             
-  
-  </div>
-</div>
 
-              <div class="form-group">
-  <label class="col-md-4 control-label" for="Distance">Distance</label>  
-  <div class="col-md-2">
-      <input id="Name" name="Distance" type="text" placeholder="Kilo-meter" class="form-control input-md"required="">
-    
-  </div>
-</div> 
+
+    <div class="form-group">
+  <label class="col-md-4 control-label" for="carbookingdate">Car Booking Date</label>
+  <div class="col-md-6"> 
+    <input id="Name" name="carbookingDate" type="text" placeholder="MM/DD/YYYY" class="form-control input-md" required="">
+</div>   
+              </div>
+
+   <div class="form-group">
+  <label class="col-md-4 control-label" for="carbookingtime">Car Booking Time</label>
+  <div class="col-md-6"> 
+    <input id="Name" name="carbookingTime" type="text" placeholder="HH/MM/SS" class="form-control input-md" required="">
+</div>   
+              </div>
 
 
               <div class="form-group">
