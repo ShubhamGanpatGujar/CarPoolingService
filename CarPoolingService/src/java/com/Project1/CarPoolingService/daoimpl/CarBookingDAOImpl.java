@@ -145,11 +145,10 @@ public class CarBookingDAOImpl implements CarBookingDAO {
            preparedStatement .setInt(1,carbooking.getCarID());
             preparedStatement .setInt(2,carbooking.getCustomerID());
           java.util.Date carbookingDate =new java.util.Date(carbooking.getCarbookingDate());
+          System.out.println("carbooking : : : "+ carbookingDate);
         preparedStatement.setDate(3, new Date(carbookingDate.getYear(),carbookingDate.getMonth(),carbookingDate.getDate()));
-        java.sql.Time carbookingTime=new java.sql.Time(24,24,24);
-         preparedStatement.setTime(4,new Time(carbookingTime.getHours(),carbookingTime.getMinutes(),carbookingTime.getSeconds()));
-            
-           preparedStatement .setInt(5,carbooking.getCarbookingID());
+        preparedStatement.setString(4,carbooking.getCarbookingTime());
+           preparedStatement .setInt(5,carbookingID);
             count=preparedStatement.executeUpdate();
         
         

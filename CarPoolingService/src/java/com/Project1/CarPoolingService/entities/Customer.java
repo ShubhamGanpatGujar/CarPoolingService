@@ -52,6 +52,16 @@ public class Customer {
         this.customerPassword = customerPassword;
     }
 
+    public Customer(String customerName, String customerContact, String customerGender, String customerEmail, String customerAddress, String customerDateOfBirth) {
+           this.customerName = customerName;
+        this.customerContact = customerContact;
+        this.customerGender = customerGender;
+        this.customerEmail = customerEmail;
+        this.customerAddress = customerAddress;
+        this.customerDateOfBirth = customerDateOfBirth;
+        System.out.println("Date Of Birth---- "+ customerDateOfBirth);
+    }
+
     
 
    

@@ -43,6 +43,7 @@ public class carbookinglistServlet extends HttpServlet {
            
             if(carbookingList.size()>0){
                 request.setAttribute("carbookingList", carbookingList);
+                System.out.println("plz......");
                 RequestDispatcher rd = request.getRequestDispatcher("carbookinglist.jsp");
                 rd.forward(request, response);
                  System.out.println("No of Records " + carbookingList.size());

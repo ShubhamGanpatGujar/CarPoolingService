@@ -44,7 +44,7 @@ th, td {
             <td><c:out value="${route.startLocation}"/></td>      
             <td><c:out value="${route.destination}"/></td>
             <td><c:out value="${route.distance}"/></td>
-            <td><a href="EditCustomer.jsp?routeID=${route.routeID}">DETAILS</a></td>
+            <td><a href="EditRoute.jsp?routeID=${route.routeID}">DETAILS</a></td>
             
         </tr>
         </c:forEach>

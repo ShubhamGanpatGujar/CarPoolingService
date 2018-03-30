@@ -61,11 +61,7 @@ request.setAttribute("customer",customer);
              </div>
              <br><br>
              
-             <label class="col-md-4 control-label" >Customer Password</label>
-             <div class="col-md-5">
-            <input type="text" name="customerPasword" value="${customer.customerPassword}"/>
-             </div>
-             <br><br>
+
             <input type="submit" name="action" value="Save Changes" />
             <input type="submit" name="action"  value="Delete" />
         </form>

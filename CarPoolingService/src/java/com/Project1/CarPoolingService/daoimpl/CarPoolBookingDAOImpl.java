@@ -120,9 +120,9 @@ public class CarPoolBookingDAOImpl implements CarPoolBookingDAO {
                    int carpoolbookingId=resultSet.getInt(4);
                    String carpoolbookingDate=resultSet.getString(5).toString();
                    String carpoolbookingTime=resultSet.getString(6);
-                   int customerID =resultSet.getInt(1) ;
-                   int routeID =resultSet.getInt(1) ;
-                   int numberofPassenger =resultSet.getInt(1) ;
+                   int customerID =resultSet.getInt(7) ;
+                   int routeID =resultSet.getInt(8) ;
+                   int numberofPassenger =resultSet.getInt(9) ;
                    
                     
                     CarPoolBooking carpoolbooking= new CarPoolBooking(invoiceID,invoiceDate,carID,carpoolbookingID,carpoolbookingDate,carpoolbookingTime,customerID,routeID,numberofPassenger);
@@ -154,7 +154,7 @@ public class CarPoolBookingDAOImpl implements CarPoolBookingDAO {
             preparedStatement.setInt(6,carpoolbooking.getCustomerID());
             preparedStatement.setInt(7,carpoolbooking.getRouteID());
             preparedStatement.setInt(8,carpoolbooking.getNumberofPassenger());
-            preparedStatement.setInt(9,carpoolbooking.getCarpoolbookingID());
+            preparedStatement.setInt(9,carpoolbookingID);
             
             count=preparedStatement.executeUpdate();
         
@@ -168,3 +168,4 @@ public class CarPoolBookingDAOImpl implements CarPoolBookingDAO {
     }
     
 }
+ 

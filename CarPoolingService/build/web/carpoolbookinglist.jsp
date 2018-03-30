@@ -62,7 +62,7 @@ th, td {
             <td><c:out value="${carpoolbooking.customerID}"/></td>
             <td><c:out value="${carpoolbooking.routeID}"/></td>
             <td><c:out value="${carpoolbooking.numberofPassenger}"/></td>
-             <td><a href="carpoolbookinglist.jsp?carpoolbookingID= ${carpoolbooking.carpoolbookingID}">DETAILS</a></td>
+             <td><a href="EditCarPoolBooking.jsp?carpoolbookingID=${carpoolbooking.carpoolbookingID}">DETAILS</a></td>
         </tr>
         </c:forEach>
     

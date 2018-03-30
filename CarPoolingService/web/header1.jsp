@@ -139,8 +139,16 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="Home1.jsp">HOME</a></li>
-        <li><a href="SignIn.jsp">Sign In</a></li>
         <li><a href="SignUp.jsp">Sign Up</a></li>
+        <li class="dropdown">
+        <a class ="dropdown-toggle" data-toggle="dropdown" href="#">Sign In
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="SignIn.jsp">Sign In Form Customer</a>
+                <li><a href="ManagerSignIn.jsp">sign In Form Manager</a>
+                
+            </ul>
+    </li>
       </ul>
     </div>
   </div>

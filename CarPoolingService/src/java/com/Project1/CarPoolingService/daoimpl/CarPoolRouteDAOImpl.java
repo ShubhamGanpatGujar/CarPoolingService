@@ -133,7 +133,7 @@ public class CarPoolRouteDAOImpl implements CarPoolRouteDAO{
             preparedStatement.setInt(1,carpoolroute.getRouteID());
             preparedStatement.setInt(2,carpoolroute.getPassengerCapacity());
             preparedStatement.setInt(3,carpoolroute.getPrice());
-             preparedStatement.setInt(4,carpoolroute.getCarpoolrouteID());
+             preparedStatement.setInt(4,carpoolrouteID);
             count = preparedStatement.executeUpdate();
             
         } catch (SQLException ex) {

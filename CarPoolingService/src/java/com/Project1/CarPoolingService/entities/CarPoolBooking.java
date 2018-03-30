@@ -35,6 +35,13 @@ public class CarPoolBooking {
         this.numberofPassenger = numberofPassenger;
     }
 
+    public CarPoolBooking(String invoiceDate, String carpoolbookingDate, String carpoolbookingTime, int numberofPassenger) {
+         this.invoiceDate = invoiceDate;
+        this.carpoolbookingDate = carpoolbookingDate;
+        this.carpoolbookingTime = carpoolbookingTime;
+        this.numberofPassenger = numberofPassenger;
+
+    }
     public int getInvoiceID() {
         return invoiceID;
     }

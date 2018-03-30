@@ -28,10 +28,13 @@ public class PickUpDAOImpl implements PickUpDAO {
         try {
             //return addEmployee(employee);
             Connection con = DerbyConnection.getConnection();
+            
             PreparedStatement preparedStatement = con.prepareStatement("insert into PickUp(pickupPoint,routeID) values(?,?)");
             preparedStatement.setString(1,pickup.getPickupPoint());
+            System.out.println("At PickUp Calledddddddd");
             preparedStatement.setInt(2,pickup.getRouteID());
             count = preparedStatement.executeUpdate();
+            
             
             
         } catch (SQLException ex) {
@@ -122,7 +125,7 @@ public class PickUpDAOImpl implements PickUpDAO {
             PreparedStatement preparedStatement = con.prepareStatement("update PickUp set pickupPoint=?, routeID=? where pickupID=?");
             preparedStatement.setString(1,pickup.getPickupPoint());
             preparedStatement.setInt(2,pickup.getRouteID());
-            preparedStatement.setInt(3,pickup.getPickupID());
+            preparedStatement.setInt(3,pickupID);
             count=preparedStatement.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(PickUpDAOImpl.class.getName()).log(Level.SEVERE, null, ex);

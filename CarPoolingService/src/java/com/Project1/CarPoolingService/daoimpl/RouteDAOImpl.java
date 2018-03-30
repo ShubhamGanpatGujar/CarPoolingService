@@ -33,6 +33,8 @@ public class RouteDAOImpl implements RouteDAO {
             preparedStatement.setString(2,route.getDestination());
             preparedStatement.setInt(3,route.getDistance());
             count = preparedStatement.executeUpdate();
+           
+                     
             
             
         } catch (SQLException ex) {
@@ -129,7 +131,7 @@ public class RouteDAOImpl implements RouteDAO {
             preparedStatement.setString(1,route.getStartLocation());
             preparedStatement.setString(2,route.getDestination());
             preparedStatement.setInt(3,route.getDistance());
-                  preparedStatement.setInt(4,route.getRouteID());
+                  preparedStatement.setInt(4,routeID);
             count = preparedStatement.executeUpdate();
             
         } catch (SQLException ex) {

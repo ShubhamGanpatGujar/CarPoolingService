@@ -40,7 +40,7 @@ th, td {
         <tr>
             <td><c:out value="${pickup.pickupPoint}"/></td>      
             <td><c:out value="${pickup.routeID}"/></td>
-        <td><a href="picklist.jsp?pickupID= ${pickup.pickupID}">DETAILS</a></td>
+        <td><a href="EditPickUp.jsp?pickupID=${pickup.pickupID}">DETAILS</a></td>
         </tr>
         </c:forEach>
     

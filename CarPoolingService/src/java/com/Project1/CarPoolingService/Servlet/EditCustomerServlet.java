@@ -52,16 +52,16 @@ public class EditCustomerServlet extends HttpServlet {
             String customerEmail;
             String customerAddress;
             String customerDateOfBirth;  
-            String customerPassword;   
+            
                customerName = request.getParameter("customerName");
                customerContact = request.getParameter("customerContact");
                customerGender = request.getParameter("customerGender");
                customerEmail = request.getParameter("customerEmail");
                customerAddress = request.getParameter("customerAddress");
                customerDateOfBirth = request.getParameter("customerDateOfBirth");
-               customerPassword = request.getParameter("customerPassword");
+              
                 System.out.println("Date Of Birth "+ customerDateOfBirth);
-                count = customerDAO.updateCustomer(customerID,new Customer(customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth,customerPassword));
+                count = customerDAO.updateCustomer(customerID,new Customer(customerName,customerContact,customerGender,customerEmail,customerAddress,customerDateOfBirth));
                 System.out.println("count : " + count);    
             }
             else if(action.equals("Delete")){

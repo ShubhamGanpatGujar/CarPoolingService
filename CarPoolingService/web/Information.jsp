@@ -18,17 +18,19 @@
     </head>
     <body>
        <%@include file="header.jsp" %>
-       <div class="container">
-       <h2>Benefits of Carpooling</h2>
+       
+       <div class="container text-center">
+           <h1>INFORMATION</h1>
        </div>
        <div class="container">
+       <h2>Benefits of Carpooling</h2>
 <p>There are many great benefits to carpooling, many of which people do not know about or even think about.
 With these benefits in mind, it will be easier than ever to see why making the switch, even for just a few
 days a week, can be a good idea for you and your commute. Wherever you are in the South Florida area,
 carpooling can help. Check out South Florida Commuter Services to see how these benefits can be yours today!</p>
-       </div>
       
-      <div class="container">
+      
+<br><br>
   <div class="row">
     <div class="col-sm-4">
         <h2>Carpooling Helps Save You Money</h2>

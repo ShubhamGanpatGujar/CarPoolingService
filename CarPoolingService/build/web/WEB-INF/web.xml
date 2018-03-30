@@ -52,6 +52,30 @@
         <servlet-name>CarBookingServlet</servlet-name>
         <servlet-class>com.Project1.CarPoolingService.Servlet.CarBookingServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>EditRouteServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.EditRouteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditCarPoolBookingServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.EditCarPoolBookingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditPickUpServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.EditPickUpServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditCarPoolRouteServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.EditCarPoolRouteServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EditCarBookingServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.EditCarBookingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManagerSignInServlet</servlet-name>
+        <servlet-class>com.Project1.CarPoolingService.Servlet.ManagerSignInServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CarServlet</servlet-name>
         <url-pattern>/Car.do</url-pattern>
@@ -103,6 +127,30 @@
     <servlet-mapping>
         <servlet-name>CarBookingServlet</servlet-name>
         <url-pattern>/CarBooking.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditRouteServlet</servlet-name>
+        <url-pattern>/EditRouteServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditCarPoolBookingServlet</servlet-name>
+        <url-pattern>/EditCarPoolBookingServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditPickUpServlet</servlet-name>
+        <url-pattern>/EditPickUpServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditCarPoolRouteServlet</servlet-name>
+        <url-pattern>/EditCarPoolRouteServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditCarBookingServlet</servlet-name>
+        <url-pattern>/EditCarBookingServlet.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManagerSignInServlet</servlet-name>
+        <url-pattern>/ManagerSignIn.do</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

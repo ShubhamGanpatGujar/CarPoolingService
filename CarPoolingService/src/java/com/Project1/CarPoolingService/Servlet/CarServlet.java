@@ -52,6 +52,7 @@ public class CarServlet extends HttpServlet {
             int Distance;
             
             String pickupPoint;
+            
             carNo = request.getParameter("carNo");
             carModel = request.getParameter("carModel");
             carAC=request.getParameter("carAC");

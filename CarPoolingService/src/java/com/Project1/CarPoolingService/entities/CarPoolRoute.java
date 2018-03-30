@@ -21,6 +21,11 @@ public class CarPoolRoute {
         this.passengerCapacity = passengerCapacity;
         this.price = price;
     }
+
+    public CarPoolRoute(int passengerCapacity, int price) {
+       this.passengerCapacity = passengerCapacity;
+        this.price = price;
+    }
     public int getCarpoolrouteID() {
         return carpoolrouteID;
     }

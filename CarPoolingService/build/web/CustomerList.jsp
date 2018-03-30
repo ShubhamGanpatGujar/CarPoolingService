@@ -39,7 +39,7 @@ th, td {
     <th>Email ID</th>
     <th>Address</th>
     <th>Birth Date</th>
-    <th>Password</th>
+ 
     </thead>
     <tbody>
         <%--<c:if test="not employeeList equals  null" var="emp">--%>
@@ -52,7 +52,7 @@ th, td {
             <td><c:out value="${customer.customerEmail}"/></td>
             <td><c:out value="${customer.customerAddress}"/></td>
             <td><c:out value="${customer.customerDateOfBirth}"/></td>
-            <td><c:out value="${customer.customerPassword}"/></td>
+            
             <td><a href="EditCustomer.jsp?customerID=${customer.customerID}">DETAILS</a></td>
             
         </tr>
